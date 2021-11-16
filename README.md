@@ -1,2 +1,2 @@
-# Docker-Fundation
-Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.
+# Docker - Basic 
+Docker este o platformă open pentru dezvoltarea, livrarea și rularea aplicațiilor. Docker vă permite să vă separați aplicațiile de infrastructură, astfel încât să puteți livra rapid software. 
