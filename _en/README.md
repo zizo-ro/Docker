@@ -11,7 +11,7 @@ In this chapter, we are going to prepare our personal or working environment to 
 This chapter covers the following topics:
 
 - [Installing and using a package manager](./M-01/installing_pm.md)
-- [Installing Git and cloning the code repository](installing_git.md)
+- [Installing Git and cloning the code repository](./M-01/installing_git.md)
 - [Choosing and installing a code editor](Choosing-and-installing-a-code-editor.md)
 - [Installing Docker for Desktop on macOS or Windows](Installing-Docker-for-Desktop-on-macOS-or-Windows.md)
 - [Installing Docker Toolbox](Installing-Docker-Toolbox.md)
