@@ -28,9 +28,10 @@ git version 2.16.3
 Now that Git is working, we can clone the source code accompanying this book from GitHub. Execute the following command:
 
 ```
-cd ~\DJK\
+mkdir c:\Docker
+cd c:\Docker
 git init
-git clone https://github.com/Fredy-SSA/DJK.git
+git pull https://github.com/zizo-ro/Docker.git
 ```
 This will clone the content of the master branch into your local folder, ~/DJK. This folder will now contain all of the sample solutions for the labs we are going to do together in this book. Refer to these sample solutions if you get stuck.
 
