@@ -15,7 +15,7 @@ No matter what OS you're using, navigate to the Docker start page at https://www
 On the right-hand side of the loaded page, you'll find a big blue button saying Download Desktop and Take a Tutorial. Click this button and follow the instructions. You will be redirected to Docker Hub. If you don't have an account on Docker Hub yet, then create one. It is absolutely free, but you need an account to download the software. Otherwise, just log in.
 Once you're logged in, look out for this on the page:
 
-![id](../../L01-ID-p1.png)
+![id](../../img/L01-ID-p1.png)
 
 
 Download Docker Desktop on Docker Hub
@@ -28,25 +28,25 @@ Follow these steps for installation:
 
 - Once you have successfully installed Docker for Desktop for macOS, please open a Terminal window and execute the following command:
  
-*CLI:*
+***CLI:***
 ```
 docker version
 ```
 You should see something like this:
 
-![id](./img/L01-ID-p2.png)
+![id](../../img/L01-ID-p2.png)
 
 
 Docker version on Docker for Desktop
 To see whether you can run containers, enter the following command into the terminal window and hit Enter:
 
-*CLI:*
+***CLI:***
 ```
 docker run hello-world
 ```
 If all goes well, your output should look something like the following:
 
-![id](../../L01-ID-p3.png)
+![id](../../img/L01-ID-p3.png)
 
 Running Hello-World on Docker for Desktop for macOS
 Next, we will install Docker on Windows.
@@ -56,14 +56,14 @@ Follow these steps for installation:
 
 - Once you have successfully installed Docker for Desktop for Windows, please open a PowerShell window and execute the following command:
 
-*PowerShell:*
+***PowerShell:***
 ```
 docker --version
 Docker version 19.03.5, build 633a0ea
 ```
 To see whether you can run containers, enter the following command into the PowerShell window and hit Enter:
 
-*PowerShell:*
+***PowerShell:***
 ```
 docker run hello-world
 ```
@@ -74,7 +74,7 @@ If all goes well, your output should look similar to the preceding figure.
 
 - https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
-*PowerShell:*
+***PowerShell:***
 ```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
@@ -104,7 +104,7 @@ wsl --set-default-version 2
 
 ## Check Version
 
-*PowerShell:*
+***PowerShell:***
 ```powershell
 choco --version
 git --version
@@ -113,9 +113,9 @@ docker --version
 
 ### Get Code
 
-*PowerShell:*
+***PowerShell:***
 ```powershell
-git pull https://github.com/Fredy-SSA/djk
+git pull https://github.com/zizo-ro/Docker
 ```
 
 
