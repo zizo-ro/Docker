@@ -6,7 +6,7 @@
 
 - [What are containers?](#what-are-containers-and-why-should-i-use-them)
 - [Why are containers important?](#why-are-containers-important)
-- The Moby project]
+- [The Moby project](#the-moby-project)
 - [Docker products]
 - [Container architecture]
 
@@ -67,10 +67,55 @@ Containers aren’t required to implement microservices, but they are perfectly 
 
 [![Home](../../img/up.png)](#what-is-docker-)
 
+# The Moby project
+Originally, when Docker (the company) introduced Docker containers, everything was open source. Docker didn't have any commercial products at this time. The Docker engine that the company developed was a monolithic piece of software. It contained many logical parts, such as the container runtime, a network library, a **RESTful (REST) API**, a command-line interface, and much more.
+
+The Moby project provides components that are used for image management, secret management, configuration management, and networking and provisioning, to name just a few. Also, part of the Moby project is special Moby tools that are, for example, used to assemble components into runnable artifacts.
+
+Some components that technically belong to the Moby project have been donated by Docker to the **Cloud-Native Computing Foundation (CNCF)** and thus do not appear in the list of components anymore. The most prominent ones are notary, containerd, and runc, where the first is used for content trust and the latter two form the container runtime.
+
+### What is Moby?
+Moby is an open framework created by Docker to assemble specialized container systems without reinventing the wheel. It provides a “lego set” of dozens of standard components and a framework for assembling them into custom platforms. At the core of Moby is a framework to assemble specialized container systems which provides:
+####  Components
+A library of containerized components for all vital aspects of a container system: OS, container runtime, orchestration, infrastructure management, networking, storage, security, build, image distribution, etc.
+#### Tools
+Tools to assemble the components into runnable artifacts for a variety of platforms and architectures: bare metal (both x86 and Arm); executables for Linux, Mac and Windows; VM images for popular cloud and virtualization providers.
+#### Assemblies
+A set of reference assemblies which can be used as-is, modified, or used as inspiration to create your own. All Moby components are containers, so creating new components is as easy as building a new OCI-compatible container.
+
+[![Home](../../img/up.png)](#what-is-docker-)
+
+# Docker products
+
+To meet these challenges, today we’re announcing updates and extensions to our product subscriptions: **Personal, Pro, Team, and Business**. These updated product subscriptions provide the productivity and collaboration developers rely on with the scale, security, and trusted content businesses require, and do so in a manner sustainable for Docker.
+
+### What you need to know:
+We’re introducing a new product subscription, Docker Business, for organizations using Docker at scale for application development and require features like secure software supply chain management, single sign-on (SSO), container registry access controls, and more.
+
+Our Docker Subscription Service Agreement includes a change to the terms for Docker Desktop:
+**Docker Desktop** remains free for small businesses (fewer than 250 employees AND less than $10 million in annual revenue), personal use, education, and non-commercial open source projects.
+
+It requires a paid subscription (**Pro, Team or Business**), starting at $5 per user per month, for professional use in larger businesses. 
+
+While the effective date of these terms is August 31, 2021, there is a grace period until January 31, 2022 for those that require a paid subscription to use Docker Desktop.
+
+Docker Pro, Docker Team, and Docker Business subscriptions include commercial use of Docker Desktop.
+
+The existing Docker Free subscription has been renamed **Docker Personal**.
+
+No changes to Docker Engine or any upstream open source Docker or Moby project.
+
+![img](../../img/Docker-Pricing-1.png)
+
+### Docker Personal = Free
+The new Docker Personal subscription replaces the Docker Free subscription. With its focus on open source communities, individual developers, education, and small businesses – which together account for more than half of Docker users – Docker Personal is free for these communities and continues to allow free use of all its components – including Docker CLI, Docker Compose, Docker Build/BuildKit, Docker Engine, Docker Desktop, Docker Hub, Docker Official Images, and more.
+
+[![Home](../../img/up.png)](#what-is-docker-)
+
 # Links 
 
 - Docker overview: https://docs.docker.com/engine/docker-overview/
 - The Moby project: https://mobyproject.org/
 - Docker products: https://www.docker.com/get-started
 - Cloud-Native Computing Foundation: https://www.cncf.io/ (Free Trainings)
-- containerd – an industry-standard container runtime: https://containerd.io/
+- Containerd – an industry-standard container runtime: https://containerd.io/
