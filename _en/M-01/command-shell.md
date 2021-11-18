@@ -9,11 +9,11 @@ In this book, we expect from you a familiarity with the most basic scripting com
 - PowerShell Basic Cheat Sheet at http://bit.ly/2EPHxze
 
 
-# DockerCLI Basic
+# Docker - CLI Basic
 ### ! Do not Run on Powershell ISE !
 ### CLI or PS Interactive CMD
 
-## Help
+### Docker Help
 
 ```
 docker image ls
@@ -25,16 +25,16 @@ docker run --help
 docker volume --help 
 ```
 
-### Run
+### Docker Run
 
 ```dockerfile
 docker version
 docker run hello-world
 ```
-# Build
+### Docker Build
 ```
 docker build -t name .
 docker push name
 ```
 
-![cli](./img/cli-cheat.png)
+![cli](../../img/cli-cheat.png)
