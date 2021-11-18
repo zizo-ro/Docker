@@ -2,7 +2,7 @@
 
 # What is Docker ?
 
-:::image type="content" source="../../img/d_emdyhfmttad.jpg" alt-text="img":::
+[:::image type="content" source="../../img/d_emdyhfmttad.jpg" alt-text="img":::]
 
 - [What are containers?](#what-are-containers-and-why-should-i-use-them)
 - [Why are containers important?](#why-are-containers-important)
