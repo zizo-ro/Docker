@@ -4,29 +4,41 @@
 We are using Git to clone the sample code accompanying this book from its GitHub repository. If you already have Git installed on your computer, you can skip this section:
 
 To install Git on your macOS, use the following command in a Terminal window:
+
+***CLI***
+``` 
+choco install git
 ```
-$ choco install git
-```
+
 To install Git on Windows, open a PowerShell window and use Chocolatey to install it:
+
+***CLI***
 ```
-PS> choco install git -y
+choco install git -y
 ```
+
 Finally, on your Debian or Ubuntu machine, open a Bash console and execute the following command:
-```
-$ sudo apt update && sudo apt install -y git
+
+***CLI***
+``` 
+sudo apt update && sudo apt install -y git
 ```
 Once Git is installed, verify that it is working. On all platforms, use the following:
-```
-$ git --version
+
+***CLI***
+``` 
+git --version
 ```
 
 This should output something along the lines of the following:
 
+***CLI***
 ```
 git version 2.16.3 
 ```
 Now that Git is working, we can clone the source code accompanying this book from GitHub. Execute the following command:
 
+***CLI***
 ```
 mkdir c:\Docker
 cd c:\Docker

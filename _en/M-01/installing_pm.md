@@ -8,8 +8,9 @@ If you're using a Debian-based Linux distribution such as **Ubuntu**, then the p
 # Installing Chocolatey on Windows
 Chocolatey is a popular package manager for Windows, built on PowerShell. To install the Chocolatey package manager, please follow the instructions at https://chocolatey.org/ or open a new PowerShell window in admin mode and execute the following command:
 
+***PowerShell***
 ```
-PS> Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 #### If TLS is old - Fix  run in Powershell
 
