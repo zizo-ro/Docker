@@ -120,6 +120,7 @@ No changes to Docker Engine or any upstream open source Docker or Moby project.
 The new Docker Personal subscription replaces the Docker Free subscription. With its focus on open source communities, individual developers, education, and small businesses – which together account for more than half of Docker users – Docker Personal is free for these communities and continues to allow free use of all its components – including Docker CLI, Docker Compose, Docker Build/BuildKit, Docker Engine, Docker Desktop, Docker Hub, Docker Official Images, and more.
 
 - Docker products: https://www.docker.com/get-started
+
 [![Home](../../img/up.png)](#what-is-docker-)
 
 # Docker architecture
