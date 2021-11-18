@@ -92,6 +92,7 @@ Tools to assemble the components into runnable artifacts for a variety of platfo
 A set of reference assemblies which can be used as-is, modified, or used as inspiration to create your own. All Moby components are containers, so creating new components is as easy as building a new OCI-compatible container.
 
 - The Moby project: https://mobyproject.org/
+
 [![Home](../../img/up.png)](#what-is-docker-)
 # Docker products
 
