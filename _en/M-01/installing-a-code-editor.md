@@ -1,26 +1,27 @@
+[![Home](../../img/home.png)](../README.md)
 # Choosing a code editor
 Using a good code editor is essential to working productively with Docker. Of course, which editor is the best is highly controversial and depends on your personal preference. A lot of people use Vim, or others such as Emacs, Atom, Sublime, or **Visual Studio Code (VS Code)**, to just name a few. VS Code is a completely free and lightweight editor, yet it is very powerful and is available for macOS, Windows, and Linux. According to Stack Overflow, it is currently by far the most popular code editor. If you are not yet sold on another editor, I highly recommend that you give VS Code a try.
 
 But if you already have a favorite code editor, then please continue using it. As long as you can edit text files, you're good to go. If your editor supports syntax highlighting for Dockerfiles and JSON and YAML files, then even better. The only exception will be  Debugging Code Running in a Container. The examples presented in that chapter will be heavily tailored toward VS Code. 
 
-# Installing VS Code on macOS
+## Installing VS Code on macOS
 Follow these steps for installation:
 
 Open a new Terminal window and execute the following command:
 ```
 $ brew cask install visual-studio-code
 ```
-Once VS Code has been installed successfully, navigate to your home directory (~) and create a folder, DJK; then navigate into this new folder:
+Once VS Code has been installed successfully, navigate to your home directory (~) and create a folder, Docker; then navigate into this new folder:
 ```
-$ mkdir ~/DJK && cd ~/DJK
+$ mkdir ~/Docker && cd ~/Docker
 ```
 Now open VS Code from within this folder:
 ```
 $ code .
 ```
-Don't forget the period (.) in the preceding command. VS will start and open the current folder (~/DJK) as the working folder.
+Don't forget the period (.) in the preceding command. VS will start and open the current folder (~/Docker) as the working folder.
 
-# Installing VS Code on Windows
+## Installing VS Code on Windows
 Follow these steps for installation:
 
 Open a new PowerShell window in admin mode and execute the following command:
@@ -28,15 +29,15 @@ Open a new PowerShell window in admin mode and execute the following command:
 PS> choco install vscode -y
 ```
 Close your PowerShell window and open a new one, to make sure VS Code is in your path.
-Now navigate to your home directory and create a folder, **DJK**; then navigate into this new folder:
+Now navigate to your home directory and create a folder, **Docker**; then navigate into this new folder:
 ```
-PS> mkdir ~\DJK; cd ~\DJK
+PS> mkdir ~\Docker; cd ~\Docker
 ```
 Finally open Visual Studio Code from within this folder:
 ```
 PS> code .
 ```
-Don't forget the period (.) in the preceding command. VS will start and open the current folder (**~\DJK**) as the working folder.
+Don't forget the period (.) in the preceding command. VS will start and open the current folder (**~\Docker**) as the working folder.
 
 # Installing VS Code on Linux
 Follow these steps for installation:
@@ -46,15 +47,15 @@ On your Debian or Ubuntu-based Linux machine, open a Bash Terminal and execute t
 $ sudo snap install --classic code
 ```
 - If you're using a Linux distribution that's not based on Debian or Ubuntu, then please follow the following link for more details: https://code.visualstudio.com/docs/setup/linux
-- Once VS Code has been installed successfully, navigate to your home directory (~) and create a folder, **DJK**; then navigate into this new folder:
+- Once VS Code has been installed successfully, navigate to your home directory (~) and create a folder, **Docker**; then navigate into this new folder:
 ```
-$ mkdir ~/DJK && cd ~/DJK
+$ mkdir ~/Docker && cd ~/Docker
 ```
 Now open Visual Studio Code from within this folder:
 ```
 $ code .
 ```
-Don't forget the period (.) in the preceding command. VS will start and open the current folder (~/DJK) as the working folder.
+Don't forget the period (.) in the preceding command. VS will start and open the current folder (~/Docker) as the working folder.
 
 # Installing VS Code extensions
 Extensions are what make VS Code such a versatile editor. On all three platforms, macOS, Windows, and Linux, you can install VS Code extensions the same way:
