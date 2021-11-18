@@ -4,13 +4,11 @@
 - [Docker ?](./M-01/what_is_docker.md)
 - [Installing and using a package manager](./M-01/installing_pm.md)
 - [Installing Git and cloning the code repository](./M-01/installing_git.md)
-- [Choosing and installing a code editor](Choosing-and-installing-a-code-editor.md)
-- [Installing Docker for Desktop on macOS or Windows](Installing-Docker-for-Desktop-on-macOS-or-Windows.md)
-- [Installing Docker Toolbox](Installing-Docker-Toolbox.md)
-- [Run Docker Cli](Run-Docker-Cli.md)
-- [The Linux command shell](The-Linux-command-shell.md)
-- [PowerShell for Windows](PowerShell-for-Windows.md)
-- [Installing Minikube](Installing-Minikube.md)
+- [Choosing and installing a code editor](./M-01/installing-a-code-editor.md)
+- [Installing Docker for Desktop on macOS or Windows](./M-01/Installing-Docker-for-Desktop-on-macOS-or-Windows.md)
+- [Installing Docker Toolbox](./M-01/Installing-Docker-Toolbox.md)
+- [The Linux command shell](./M-01/command-shell.md)
+- [Installing Minikube](./M-01/Installing-Minikube.md)
 
 
 # Technical requirements
