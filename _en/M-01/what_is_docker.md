@@ -8,7 +8,7 @@
 - [Why are containers important?](#why-are-containers-important)
 - [The Moby project](#the-moby-project)
 - [Docker products](#docker-products)
-- [Container architecture]
+- [Container architecture](#docker-architecture)
 
 
 # What Are Containers and Why Should I Use Them?
@@ -24,9 +24,9 @@ In this chapter, we will focus on the software supply chain and the friction wit
 ### Alternatives to Docker
 Linux containers have facilitated a massive shift in high-availability computing. There are many toolsets out there to help you run services, or even your entire operating system, in containers. The **Open Container Initiative (OCI)** is an industry standards organization that encourages innovation while avoiding the danger of vendor lock-in. Thanks to the OCI, you have a choice when choosing a container toolchain, including **Docker**, **CRI-O**, **Podman**, **LXC**, and others.
 
-[![Home](../../img/up.png)](#what-is-docker-)
-
 - Docker overview: https://docs.docker.com/engine/docker-overview/
+
+[![Home](../../img/up.png)](#what-is-docker-)
 
 # Why are containers important?
 
@@ -88,10 +88,8 @@ Tools to assemble the components into runnable artifacts for a variety of platfo
 #### Assemblies
 A set of reference assemblies which can be used as-is, modified, or used as inspiration to create your own. All Moby components are containers, so creating new components is as easy as building a new OCI-compatible container.
 
-[![Home](../../img/up.png)](#what-is-docker-)
-
 - The Moby project: https://mobyproject.org/
-
+[![Home](../../img/up.png)](#what-is-docker-)
 # Docker products
 
 To meet these challenges, today we’re announcing updates and extensions to our product subscriptions: **Personal, Pro, Team, and Business**. These updated product subscriptions provide the productivity and collaboration developers rely on with the scale, security, and trusted content businesses require, and do so in a manner sustainable for Docker.
@@ -117,10 +115,8 @@ No changes to Docker Engine or any upstream open source Docker or Moby project.
 ### Docker Personal = Free
 The new Docker Personal subscription replaces the Docker Free subscription. With its focus on open source communities, individual developers, education, and small businesses – which together account for more than half of Docker users – Docker Personal is free for these communities and continues to allow free use of all its components – including Docker CLI, Docker Compose, Docker Build/BuildKit, Docker Engine, Docker Desktop, Docker Hub, Docker Official Images, and more.
 
-[![Home](../../img/up.png)](#what-is-docker-)
 - Docker products: https://www.docker.com/get-started
-
-
+[![Home](../../img/up.png)](#what-is-docker-)
 
 # Docker architecture
 Docker uses a client-server architecture. The Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon can run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. Another Docker client is Docker Compose, that lets you work with applications consisting of a set of containers.
@@ -157,7 +153,7 @@ A container is defined by its image as well as any configuration options you pro
 
 
 
-[![Home](../../img/up.png)](#what-is-docker-)
-
 - Cloud-Native Computing Foundation: https://www.cncf.io/ (Free Trainings)
 - Containerd – an industry-standard container runtime: https://containerd.io/
+
+[![Home](../../img/up.png)](#what-is-docker-)
