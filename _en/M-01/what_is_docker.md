@@ -2,11 +2,7 @@
 
 # What is Docker ?
 
-[:::image type="content" source="../../img/d_emdyhfmttad.jpg" alt-text="img":::]
-
-![img](../../img/d_emdyhfmttad.jpg "a title")
-
-![alt text](../../img/d_emdyhfmttad.jpg)
+![img](../../img/d_emdyhfmttad.jpg)
 
 - [What are containers?](#what-are-containers-and-why-should-i-use-them)
 - [Why are containers important?](#why-are-containers-important)
@@ -28,10 +24,12 @@ In this chapter, we will focus on the software supply chain and the friction wit
 ### Alternatives to Docker
 Linux containers have facilitated a massive shift in high-availability computing. There are many toolsets out there to help you run services, or even your entire operating system, in containers. The **Open Container Initiative (OCI)** is an industry standards organization that encourages innovation while avoiding the danger of vendor lock-in. Thanks to the OCI, you have a choice when choosing a container toolchain, including **Docker**, **CRI-O**, **Podman**, **LXC**, and others.
 
+[![Home](../../img/up.png)](#what-is-docker-)
 
 # Why are containers important?
 
-:::image type="content" source="../../img/d_wfip.jpg" alt-text="Img":::
+
+![img](../../img/d_wfip.jpg)
 
 ### Before Docker containers
 For many years now, enterprise software has typically been deployed either on “bare metal” (i.e. installed on an operating system that has complete control over the underlying hardware) or in a virtual machine (i.e. installed on an operating system that shares the underlying hardware with other “guest” operating systems). Naturally, installing on bare metal made the software painfully difficult to move around and difficult to update—two constraints that made it hard for IT to respond nimbly to changes in business needs.
@@ -67,7 +65,7 @@ One of the software patterns containers make easier is microservices, where appl
 
 Containers aren’t required to implement microservices, but they are perfectly suited to the microservices approach and to agile development processes generally.
 
-
+[![Home](../../img/up.png)](#what-is-docker-)
 
 # Links 
 
