@@ -7,7 +7,7 @@
 - [What are containers?](#what-are-containers-and-why-should-i-use-them)
 - [Why are containers important?](#why-are-containers-important)
 - [The Moby project](#the-moby-project)
-- [Docker products]
+- [Docker products](#docker-products)
 - [Container architecture]
 
 
