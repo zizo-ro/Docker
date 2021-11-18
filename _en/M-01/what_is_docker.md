@@ -75,6 +75,9 @@ The Moby project provides components that are used for image management, secret 
 Some components that technically belong to the Moby project have been donated by Docker to the **Cloud-Native Computing Foundation (CNCF)** and thus do not appear in the list of components anymore. The most prominent ones are notary, containerd, and runc, where the first is used for content trust and the latter two form the container runtime.
 
 ### What is Moby?
+
+![img](../../img/moby.jpg)
+
 Moby is an open framework created by Docker to assemble specialized container systems without reinventing the wheel. It provides a “lego set” of dozens of standard components and a framework for assembling them into custom platforms. At the core of Moby is a framework to assemble specialized container systems which provides:
 ####  Components
 A library of containerized components for all vital aspects of a container system: OS, container runtime, orchestration, infrastructure management, networking, storage, security, build, image distribution, etc.
