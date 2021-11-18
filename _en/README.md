@@ -1,14 +1,4 @@
-# Introduction to Docker 
-
-[![Home](../img/home.png)](../README.md)
-
-# Setting Up a Working Environment
-
-In the last chapter, we learned what Docker containers are and why they're important. We learned what kinds of problems containers solve in a modern software supply chain.
-
-In this chapter, we are going to prepare our personal or working environment to work efficiently and effectively with Docker. We will discuss in detail how to set up an ideal environment for developers, DevOps, and operators that can be used when working with Docker containers.
-
-This chapter covers the following topics:
+[![Home](../img/home.png)](../README.md) # Introduction to Docker 
 
 - [Docker ?](./M-01/what_is_docker.md)
 - [Installing and using a package manager](./M-01/installing_pm.md)
