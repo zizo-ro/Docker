@@ -125,3 +125,7 @@ git pull https://github.com/zizo-ro/Docker
 As mentioned earlier, Docker for Desktop is only available for macOS and Windows 10 Pro. If you're using a Linux machine, then you can use the **Docker Community Edition (CE)**, which consists of Docker Engine, plus a few additional tools, such as the **Docker Command Line Interface (CLI)**and **docker-compose**.
 
 Please follow the instructions at the following link to install Docker CE for your particular Linux distribution—in this case, Ubuntu: https://docs.docker.com/install/linux/docker-ce/ubuntu/.
+
+
+[![Home](../../img/up.png)](#installing-docker-for-desktop)
+

@@ -95,3 +95,6 @@ code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 
 - After the preceding extensions have been installed successfully, restart VS Code to activate the extensions. You can now click the extensions icon in the activity pane on the left-hand side of VS Code to see all of the installed extensions.
 Next, let's install Docker for Desktop.
+
+[![Home](../../img/up.png)](#choosing-a-code-editor)
+

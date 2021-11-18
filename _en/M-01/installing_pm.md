@@ -37,3 +37,7 @@ choco install -y vim
 The -y parameter makes sure that the installation happens without asking for reconfirmation.
 
 - **Tip** : Please note that once Chocolatey has installed an application, you need to open a new PowerShell window to use that application.
+
+
+[![Home](../../img/up.png)](#using-a-package-manager)
+

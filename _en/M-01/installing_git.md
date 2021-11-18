@@ -48,3 +48,6 @@ git pull https://github.com/zizo-ro/Docker.git
 This will clone the content of the master branch into your local folder, ~/DJK. This folder will now contain all of the sample solutions for the labs we are going to do together in this book. Refer to these sample solutions if you get stuck.
 
 Now that we have installed the basics, let's continue with the code editor.
+
+
+[![Home](../../img/up.png)](#installing-git)
