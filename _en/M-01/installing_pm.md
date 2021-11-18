@@ -12,6 +12,8 @@ Chocolatey is a popular package manager for Windows, built on PowerShell. To ins
 PS> Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 #### If TLS is old - Fix  run in Powershell
+
+***PowerShell***
 ```powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 ```
@@ -19,13 +21,17 @@ PS> Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Ne
 - **Tip** :It is important to run the preceding command as an administrator, otherwise, the installation will not succeed.
 
 Once Chocolatey is installed, test it with the choco --version command. You should see output similar to the following:
+
+***PowerShell***
 ```
-PS> choco --version
+choco --version
 0.10.15
 ```
 To install an application such as the Vi editor, use the following command:
+
+***PowerShell***
 ```
-PS> choco install -y vim
+choco install -y vim
 ```
 The -y parameter makes sure that the installation happens without asking for reconfirmation.
 

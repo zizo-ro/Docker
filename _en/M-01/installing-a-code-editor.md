@@ -8,16 +8,22 @@ But if you already have a favorite code editor, then please continue using it. A
 Follow these steps for installation:
 
 Open a new Terminal window and execute the following command:
+
+***CLI***
 ```
-$ brew cask install visual-studio-code
+brew cask install visual-studio-code
 ```
 Once VS Code has been installed successfully, navigate to your home directory (~) and create a folder, Docker; then navigate into this new folder:
+
+***CLI***
 ```
-$ mkdir ~/Docker && cd ~/Docker
+mkdir ~/Docker && cd ~/Docker
 ```
 Now open VS Code from within this folder:
+
+***CLI***
 ```
-$ code .
+code .
 ```
 Don't forget the period (.) in the preceding command. VS will start and open the current folder (~/Docker) as the working folder.
 
@@ -25,17 +31,22 @@ Don't forget the period (.) in the preceding command. VS will start and open the
 Follow these steps for installation:
 
 Open a new PowerShell window in admin mode and execute the following command:
+
+***PowerShell***
 ```
-PS> choco install vscode -y
+choco install vscode -y
 ```
 Close your PowerShell window and open a new one, to make sure VS Code is in your path.
 Now navigate to your home directory and create a folder, **Docker**; then navigate into this new folder:
+
+***PowerShell***
 ```
-PS> mkdir ~\Docker; cd ~\Docker
+ mkdir ~\Docker; cd ~\Docker
 ```
+***PowerShell***
 Finally open Visual Studio Code from within this folder:
 ```
-PS> code .
+ code .
 ```
 Don't forget the period (.) in the preceding command. VS will start and open the current folder (**~\Docker**) as the working folder.
 
@@ -43,25 +54,32 @@ Don't forget the period (.) in the preceding command. VS will start and open the
 Follow these steps for installation:
 
 On your Debian or Ubuntu-based Linux machine, open a Bash Terminal and execute the following statement to install VS Code:
-```
-$ sudo snap install --classic code
+
+***CLI***
+``` 
+sudo snap install --classic code
 ```
 - If you're using a Linux distribution that's not based on Debian or Ubuntu, then please follow the following link for more details: https://code.visualstudio.com/docs/setup/linux
 - Once VS Code has been installed successfully, navigate to your home directory (~) and create a folder, **Docker**; then navigate into this new folder:
+
+***CLI***
 ```
-$ mkdir ~/Docker && cd ~/Docker
+mkdir ~/Docker && cd ~/Docker
 ```
 Now open Visual Studio Code from within this folder:
+
+***CLI***
 ```
-$ code .
+code .
 ```
 Don't forget the period (.) in the preceding command. VS will start and open the current folder (~/Docker) as the working folder.
 
-# Installing VS Code extensions
+### Installing VS Code extensions
 Extensions are what make VS Code such a versatile editor. On all three platforms, macOS, Windows, and Linux, you can install VS Code extensions the same way:
 
 Open a Bash console (or PowerShell in Windows) and execute the following group of commands to install the most essential extensions we are going to use in the upcoming examples in this book:
 
+***CLI***
 ```
 code --install-extension vscjava.vscode-java-pack
 code --install-extension ms-vscode.csharp
