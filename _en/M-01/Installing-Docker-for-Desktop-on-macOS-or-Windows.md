@@ -7,7 +7,7 @@ If you are using macOS or have Windows 10 Professional installed on your laptop,
 
 - Note that older versions of Windows or Windows 10 Home edition cannot run Docker for Windows. Docker for Windows uses Hyper-V to run containers transparently in a VM but Hyper-V is not available on older versions of Windows; nor is it available in the Home edition of Windows 10. In this case, we recommend that you use Docker Toolbox instead, which we will describe in the next section.
 
-## Download Docker Desktop WIndows 10
+### Download Docker Desktop WIndows 10
  https://www.docker.com/get-started
 
  Follow these steps:
@@ -23,12 +23,14 @@ Download Docker Desktop on Docker Hub
 
 Note that if you're on a Windows PC, the blue button will say Download Docker Desktop for Windows instead.
 
-## Installing Docker for Desktop on macOS
+### Installing Docker for Desktop on macOS
 Follow these steps for installation:
 
 - Once you have successfully installed Docker for Desktop for macOS, please open a Terminal window and execute the following command:
+ 
+*CLI:*
 ```
-$ docker version
+docker version
 ```
 You should see something like this:
 
@@ -37,8 +39,10 @@ You should see something like this:
 
 Docker version on Docker for Desktop
 To see whether you can run containers, enter the following command into the terminal window and hit Enter:
+
+*CLI:*
 ```
-$ docker run hello-world
+docker run hello-world
 ```
 If all goes well, your output should look something like the following:
 
@@ -51,13 +55,17 @@ Next, we will install Docker on Windows.
 Follow these steps for installation:
 
 - Once you have successfully installed Docker for Desktop for Windows, please open a PowerShell window and execute the following command:
+
+*PowerShell:*
 ```
-PS> docker --version
+docker --version
 Docker version 19.03.5, build 633a0ea
 ```
 To see whether you can run containers, enter the following command into the PowerShell window and hit Enter:
+
+*PowerShell:*
 ```
-PS> docker run hello-world
+docker run hello-world
 ```
 
 If all goes well, your output should look similar to the preceding figure.
@@ -66,6 +74,7 @@ If all goes well, your output should look similar to the preceding figure.
 
 - https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
+*PowerShell:*
 ```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
@@ -95,7 +104,7 @@ wsl --set-default-version 2
 
 ## Check Version
 
-
+*PowerShell:*
 ```powershell
 choco --version
 git --version
@@ -104,6 +113,7 @@ docker --version
 
 ### Get Code
 
+*PowerShell:*
 ```powershell
 git pull https://github.com/Fredy-SSA/djk
 ```
