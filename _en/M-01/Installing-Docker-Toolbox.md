@@ -1,4 +1,4 @@
-[![Home](../../img/home.png)](../README.md)
+[![Home](../../img/home.png)](../M-01/README.md)
 # Installing Docker Toolbox
 Docker Toolbox has been available for developers for a few years. It precedes newer tools such as Docker for Desktop. The Toolbox allows a user to work very elegantly with containers on any macOS or Windows computer. Containers must run on a Linux host. Neither Windows nor macOS can run containers natively. Hence, we need to run a Linux VM on our laptop, where we can then run our containers. Docker Toolbox installs VirtualBox on our laptop, which is used to run the Linux VMs we need.
 
@@ -21,7 +21,7 @@ brew cask install docker-toolbox
 
 You should see something like this:
 
-![IDT](../../img/L01-ID-p4.png)
+![IDT](../../img/M-01/L01-ID-p4.png)
 
 Installing Docker Toolbox on macOS
 
@@ -46,7 +46,7 @@ choco install docker-toolbox -y
 ```
 The output should look similar to this:
 
-![IDT](../../img/L01-ID-p5.png)
+![IDT](../../img/M-01/L01-ID-p5.png)
 
 Installing Docker Toolbox on Windows 10
 We will now be setting up Docker Toolbox.
@@ -66,7 +66,7 @@ Follow these steps for setup:
 
 L-et's use **docker-machine** to set up our environment. First, we list all Docker-ready VMs we have currently defined on our system. If you have just installed Docker Toolbox, you should see the following output:
 
-![IDT](../../img/L01-ID-p6.png)
+![IDT](../../img/M-01/L01-ID-p6.png)
 
 List of all Docker-ready VMs
 
@@ -78,13 +78,13 @@ docker-machine start default
 ```
 This produces the following output:
 
-![IDT](../../img/L01-ID-p7.png)
+![IDT](../../img/M-01/L01-ID-p7.png)
 
 
 Starting the default VM in Docker Toolbox
 
 - If we now list the VMs again, we should see this:
-![IDT](../../img/L01-ID-p8.png)
+![IDT](../../img/M-01/L01-ID-p8.png)
 
 Listing the running VMs in Docker Toolbox
 
@@ -103,7 +103,7 @@ docker-machine create — driver hyperv — hyperv-virtual-switch
 
 This will generate the following output:
 
-![IDT](../../img/L01-ID-p9.png)
+![IDT](../../img/M-01/L01-ID-p9.png)
 
 Creating a new default VM in Docker Toolbox
 
@@ -141,7 +141,7 @@ docker version
 ```
 This should result in the following output:
 
- ![IDT](../../img/L01-ID-p10.png)
+ ![IDT](../../img/M-01/L01-ID-p10.png)
 
 Output of docker version
 
@@ -157,11 +157,11 @@ docker run hello-world
 
 This will produce the following output:
 
- ![IDT](../../img/L01-ID-p11.png)
+ ![IDT](../../img/M-01/L01-ID-p11.png)
 
 The preceding output confirms that Docker Toolbox is working as expected and can run containers.
 
 - **Tip :** Docker Toolbox is a great addition even when you normally use Docker for Desktop for your development with Docker. Docker Toolbox allows you to create multiple Docker hosts (or VMs) in VirtualBox and connect them to a cluster, on top of which you can run Docker Swarm or Kubernetes.
 
-[![Home](../../img/up.png)](#installing-docker-toolbox)
+[![Home](../../img/M-01/up.png)](#installing-docker-toolbox)
 

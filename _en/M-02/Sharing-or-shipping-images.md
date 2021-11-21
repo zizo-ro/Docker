@@ -1,4 +1,4 @@
-[![Home](../../img/home.png)](../README.md)
+[![Home](../../img/home.png)](../M-02/README.md)
 
 # **Sharing or shipping images**
 To be able to ship our custom image to other environments, we need to first give it a globally unique name. This action is often called tagging an image. We then need to publish the image to a central location from which other interested or entitled parties can pull it. These central locations are called image registries.

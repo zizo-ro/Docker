@@ -1,4 +1,4 @@
-[![Home](../../img/home.png)](../README.md)
+[![Home](../../img/home.png)](../M-01/README.md)
 #  Installing Docker for Desktop
 If you are using macOS or have Windows 10 Professional installed on your laptop, then we strongly recommend that you install Docker for Desktop. This platform gives you the best experience when working with containers.
 
@@ -15,7 +15,7 @@ No matter what OS you're using, navigate to the Docker start page at https://www
 On the right-hand side of the loaded page, you'll find a big blue button saying Download Desktop and Take a Tutorial. Click this button and follow the instructions. You will be redirected to Docker Hub. If you don't have an account on Docker Hub yet, then create one. It is absolutely free, but you need an account to download the software. Otherwise, just log in.
 Once you're logged in, look out for this on the page:
 
-![id](../../img/L01-ID-p1.png)
+![id](../../img/M-01/L01-ID-p1.png)
 
 
 Download Docker Desktop on Docker Hub
@@ -34,7 +34,7 @@ docker version
 ```
 You should see something like this:
 
-![id](../../img/L01-ID-p2.png)
+![id](../../img/M-01/L01-ID-p2.png)
 
 
 Docker version on Docker for Desktop
@@ -46,7 +46,7 @@ docker run hello-world
 ```
 If all goes well, your output should look something like the following:
 
-![id](../../img/L01-ID-p3.png)
+![id](../../img/M-01/L01-ID-p3.png)
 
 Running Hello-World on Docker for Desktop for macOS
 Next, we will install Docker on Windows.
@@ -127,5 +127,5 @@ As mentioned earlier, Docker for Desktop is only available for macOS and Windows
 Please follow the instructions at the following link to install Docker CE for your particular Linux distribution—in this case, Ubuntu: https://docs.docker.com/install/linux/docker-ce/ubuntu/.
 
 
-[![Home](../../img/up.png)](#installing-docker-for-desktop)
+[![Home](../../img/M-01/up.png)](#installing-docker-for-desktop)
 

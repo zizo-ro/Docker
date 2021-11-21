@@ -1,4 +1,4 @@
-[![Home](../../img/home.png)](../README.md)
+[![Home](../../img/home.png)](../M-02/README.md)
 
 # Anatomy of containers
 Many people wrongly compare containers to VMs. However, this is a questionable comparison. Containers are not just lightweight VMs. OK then, what is the correct description of a container?

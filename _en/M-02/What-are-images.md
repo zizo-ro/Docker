@@ -1,4 +1,4 @@
-[![Home](../../img/home.png)](../README.md)
+[![Home](../../img/home.png)](../M-02/README.md)
 
 # What are images?
 In Linux, everything is a file. The whole operating system is basically a filesystem with files and folders stored on the local disk. This is an important fact to remember when looking at what container images are. As we will see, an image is basically a big tarball containing a filesystem. More specifically, it contains a layered filesystem.

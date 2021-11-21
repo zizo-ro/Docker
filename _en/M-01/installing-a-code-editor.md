@@ -1,4 +1,4 @@
-[![Home](../../img/home.png)](../README.md)
+[![Home](../../img/home.png)](../M-01/README.md)
 # Choosing a code editor
 Using a good code editor is essential to working productively with Docker. Of course, which editor is the best is highly controversial and depends on your personal preference. A lot of people use Vim, or others such as Emacs, Atom, Sublime, or **Visual Studio Code (VS Code)**, to just name a few. VS Code is a completely free and lightweight editor, yet it is very powerful and is available for macOS, Windows, and Linux. According to Stack Overflow, it is currently by far the most popular code editor. If you are not yet sold on another editor, I highly recommend that you give VS Code a try.
 
@@ -96,5 +96,5 @@ code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 - After the preceding extensions have been installed successfully, restart VS Code to activate the extensions. You can now click the extensions icon in the activity pane on the left-hand side of VS Code to see all of the installed extensions.
 Next, let's install Docker for Desktop.
 
-[![Home](../../img/up.png)](#choosing-a-code-editor)
+[![Home](../../img/M-01/up.png)](#choosing-a-code-editor)
 

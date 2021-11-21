@@ -1,4 +1,4 @@
-[![Home](../../img/home.png)](../README.md)
+[![Home](../../img/home.png)](../M-01/README.md)
 # Installing Minikube
 
 If you cannot use Docker for Desktop or, for some reason, you only have access to an older version of the tool that does not yet support Kubernetes, then it is a good idea to install Minikube. Minikube provisions a single-node Kubernetes cluster on your workstation and is accessible through kubectl, which is the command-line tool used to work with Kubernetes.
@@ -34,7 +34,7 @@ To install Minikube manually on Windows, download minikube-windows-amd64, rename
 
 Once Minikube is successfully installed on your workstation, open a Terminal and test the installation. First, we need to start Minikube. Enter **minikube start** at the command line. This command may take a few minutes or so to complete. The output should look similar to the following:
 
-![Im](../../img/L01-ID-p12.png)
+![Im](../../img/M-01/L01-ID-p12.png)
 
 - **Note :** , your output may look slightly different. In my case, I am running Minikube on a Windows 10 Pro computer. On a Mac notifications are quite different, but this doesn't matter here.
 
@@ -50,7 +50,7 @@ Once Minikube is ready, we can access its single node cluster using kubectl. We 
 ```
 kubectl get nodes
 ```
-![m12](../../img/m12-k4.png)
+![m12](../../img/M-01/m12-k4.png)
 
 - **Note**, your output may look slightly different. In my case, I am running Minikube on a Windows 10 Pro computer. On a Mac notifications are quite different, but this doesn't matter here.
 Now, enter kubectl version and hit Enter to see something like the following screenshot:
@@ -59,7 +59,7 @@ Now, enter kubectl version and hit Enter to see something like the following scr
 ```
 kubectl version
 ```
-![m12](../../img/m12-k5.png)
+![m12](../../img/M-01/m12-k5.png)
 
  Determining the version of the Kubernetes client and server
 
@@ -94,5 +94,5 @@ minikube Ready master 47d v1.17.3
 
 Evidently, we have a cluster of one node, which in my case has Kubernetes **v1.17.3** installed on it.
 
-[![Home](../../img/up.png)](#installing-minikube)
+[![Home](../../img/M-01/up.png)](#installing-minikube)
 

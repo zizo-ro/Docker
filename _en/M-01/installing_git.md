@@ -1,4 +1,4 @@
-[![Home](../../img/home.png)](../README.md)
+[![Home](../../img/home.png)](../M-01/README.md)
 
 # Installing Git
 We are using Git to clone the sample code accompanying this book from its GitHub repository. If you already have Git installed on your computer, you can skip this section:
@@ -50,4 +50,4 @@ This will clone the content of the master branch into your local folder, ~/DJK. 
 Now that we have installed the basics, let's continue with the code editor.
 
 
-[![Home](../../img/up.png)](#installing-git)
+[![Home](../../img/M-01/up.png)](#installing-git)

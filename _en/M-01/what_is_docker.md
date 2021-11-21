@@ -1,8 +1,8 @@
-[![Home](../../img/home.png)](../README.md)
+[![Home](../../img/home.png)](../M-01/README.md)
 
 # What is Docker ?
 
-![img](../../img/d_emdyhfmttad.jpg)
+![img](../../img/M-01/d_emdyhfmttad.jpg)
 
 - [What are containers?](#what-are-containers-and-why-should-i-use-them)
 - [Why are containers important?](#why-are-containers-important)
@@ -29,12 +29,12 @@ Linux containers have facilitated a massive shift in high-availability computing
 - Podman : https://podman.io/
 - LXC: https://linuxcontainers.org/
 
-[![Home](../../img/up.png)](#what-is-docker-)
+[![Home](../../img/M-01/up.png)](#what-is-docker-)
 
 # Why are containers important?
 
 
-![img](../../img/d_wfip.jpg)
+![img](../../img/M-01/d_wfip.jpg)
 
 ### Before Docker containers
 For many years now, enterprise software has typically been deployed either on “bare metal” (i.e. installed on an operating system that has complete control over the underlying hardware) or in a virtual machine (i.e. installed on an operating system that shares the underlying hardware with other “guest” operating systems). Naturally, installing on bare metal made the software painfully difficult to move around and difficult to update—two constraints that made it hard for IT to respond nimbly to changes in business needs.
@@ -70,7 +70,7 @@ One of the software patterns containers make easier is microservices, where appl
 
 Containers aren’t required to implement microservices, but they are perfectly suited to the microservices approach and to agile development processes generally.
 
-[![Home](../../img/up.png)](#what-is-docker-)
+[![Home](../../img/M-01/up.png)](#what-is-docker-)
 
 # The Moby project
 Originally, when Docker (the company) introduced Docker containers, everything was open source. Docker didn't have any commercial products at this time. The Docker engine that the company developed was a monolithic piece of software. It contained many logical parts, such as the container runtime, a network library, a **RESTful (REST) API**, a command-line interface, and much more.
@@ -81,7 +81,7 @@ Some components that technically belong to the Moby project have been donated by
 
 ### What is Moby?
 
-![img](../../img/moby.jpg)
+![img](../../img/M-01/moby.jpg)
 
 Moby is an open framework created by Docker to assemble specialized container systems without reinventing the wheel. It provides a “lego set” of dozens of standard components and a framework for assembling them into custom platforms. At the core of Moby is a framework to assemble specialized container systems which provides:
 ####  Components
@@ -93,7 +93,7 @@ A set of reference assemblies which can be used as-is, modified, or used as insp
 
 - The Moby project: https://mobyproject.org/
 
-[![Home](../../img/up.png)](#what-is-docker-)
+[![Home](../../img/M-01/up.png)](#what-is-docker-)
 # Docker products
 
 To meet these challenges, today we’re announcing updates and extensions to our product subscriptions: **Personal, Pro, Team, and Business**. These updated product subscriptions provide the productivity and collaboration developers rely on with the scale, security, and trusted content businesses require, and do so in a manner sustainable for Docker.
@@ -114,21 +114,21 @@ The existing Docker Free subscription has been renamed **Docker Personal**.
 
 No changes to Docker Engine or any upstream open source Docker or Moby project.
 
-![img](../../img/Docker-Pricing-1.png)
+![img](../../img/M-01/Docker-Pricing-1.png)
 
 ### Docker Personal = Free
 The new Docker Personal subscription replaces the Docker Free subscription. With its focus on open source communities, individual developers, education, and small businesses – which together account for more than half of Docker users – Docker Personal is free for these communities and continues to allow free use of all its components – including Docker CLI, Docker Compose, Docker Build/BuildKit, Docker Engine, Docker Desktop, Docker Hub, Docker Official Images, and more.
 
 - Docker products: https://www.docker.com/get-started
 
-[![Home](../../img/up.png)](#what-is-docker-)
+[![Home](../../img/M-01/up.png)](#what-is-docker-)
 
 # Docker architecture
 Docker uses a client-server architecture. The Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon can run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. Another Docker client is Docker Compose, that lets you work with applications consisting of a set of containers.
 
 ## Docker Architecture Diagram
 
-![img](../../img/docker_arhitecture.jpg)
+![img](../../img/M-01/docker_arhitecture.jpg)
 
 ### The Docker daemon
 The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemons to manage Docker services.
@@ -161,4 +161,4 @@ A container is defined by its image as well as any configuration options you pro
 - Cloud-Native Computing Foundation: https://www.cncf.io/ (Free Trainings)
 - Containerd – an industry-standard container runtime: https://containerd.io/
 
-[![Home](../../img/up.png)](#what-is-docker-)
+[![Home](../../img/M-01/up.png)](#what-is-docker-)

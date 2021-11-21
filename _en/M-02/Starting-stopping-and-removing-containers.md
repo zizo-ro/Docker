@@ -1,4 +1,4 @@
-[![Home](../../img/home.png)](../README.md)
+[![Home](../../img/home.png)](../M-02/README.md)
 
 # Starting, stopping, and removing containers
 You have successfully run a container in the previous section. Now, we want to investigate in detail what exactly happened and why. Let's look again at the command we used:

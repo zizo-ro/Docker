@@ -1,4 +1,4 @@
-[![Home](../../img/home.png)](../README.md)
+[![Home](../../img/home.png)](../M-01/README.md)
 
 # Using a package manager
 The easiest way to install software on a **macOS** or **Windows** laptop is to use a good package manager. 
@@ -39,5 +39,5 @@ The -y parameter makes sure that the installation happens without asking for rec
 - **Tip** : Please note that once Chocolatey has installed an application, you need to open a new PowerShell window to use that application.
 
 
-[![Home](../../img/up.png)](#using-a-package-manager)
+[![Home](../../img/M-01/up.png)](#using-a-package-manager)
 
