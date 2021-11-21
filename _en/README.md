@@ -2,7 +2,7 @@
 # Introduction to Docker 
 
 - [M-01 : Installing](./M-01/README.md)
-- [M-02](./M-01/installing_pm.md)
+- [M-02 : Mastering Containers](./M-02/README.md)
 
 
 

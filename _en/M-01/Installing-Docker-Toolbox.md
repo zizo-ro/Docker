@@ -12,10 +12,13 @@ Follow these steps for installation:
 
 Open a new Terminal window and use Homebrew to install the toolbox:
 
+
 ***CLI***
+
 ``
 brew cask install docker-toolbox 
 ``
+
 You should see something like this:
 
 ![IDT](../../img/L01-ID-p4.png)
