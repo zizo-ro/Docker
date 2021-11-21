@@ -39,5 +39,5 @@ The -y parameter makes sure that the installation happens without asking for rec
 - **Tip** : Please note that once Chocolatey has installed an application, you need to open a new PowerShell window to use that application.
 
 
-[![Home](../../img/M-01/up.png)](#using-a-package-manager)
+[![Home](../../img/up.png)](#using-a-package-manager)
 

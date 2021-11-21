@@ -29,7 +29,7 @@ Linux containers have facilitated a massive shift in high-availability computing
 - Podman : https://podman.io/
 - LXC: https://linuxcontainers.org/
 
-[![Home](../../img/M-01/up.png)](#what-is-docker-)
+[![Home](../../img/up.png)](#what-is-docker-)
 
 # Why are containers important?
 
@@ -70,7 +70,7 @@ One of the software patterns containers make easier is microservices, where appl
 
 Containers aren’t required to implement microservices, but they are perfectly suited to the microservices approach and to agile development processes generally.
 
-[![Home](../../img/M-01/up.png)](#what-is-docker-)
+[![Home](../../img/up.png)](#what-is-docker-)
 
 # The Moby project
 Originally, when Docker (the company) introduced Docker containers, everything was open source. Docker didn't have any commercial products at this time. The Docker engine that the company developed was a monolithic piece of software. It contained many logical parts, such as the container runtime, a network library, a **RESTful (REST) API**, a command-line interface, and much more.
@@ -93,7 +93,7 @@ A set of reference assemblies which can be used as-is, modified, or used as insp
 
 - The Moby project: https://mobyproject.org/
 
-[![Home](../../img/M-01/up.png)](#what-is-docker-)
+[![Home](../../img/up.png)](#what-is-docker-)
 # Docker products
 
 To meet these challenges, today we’re announcing updates and extensions to our product subscriptions: **Personal, Pro, Team, and Business**. These updated product subscriptions provide the productivity and collaboration developers rely on with the scale, security, and trusted content businesses require, and do so in a manner sustainable for Docker.
@@ -121,7 +121,7 @@ The new Docker Personal subscription replaces the Docker Free subscription. With
 
 - Docker products: https://www.docker.com/get-started
 
-[![Home](../../img/M-01/up.png)](#what-is-docker-)
+[![Home](../../img/up.png)](#what-is-docker-)
 
 # Docker architecture
 Docker uses a client-server architecture. The Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon can run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. Another Docker client is Docker Compose, that lets you work with applications consisting of a set of containers.
@@ -161,4 +161,4 @@ A container is defined by its image as well as any configuration options you pro
 - Cloud-Native Computing Foundation: https://www.cncf.io/ (Free Trainings)
 - Containerd – an industry-standard container runtime: https://containerd.io/
 
-[![Home](../../img/M-01/up.png)](#what-is-docker-)
+[![Home](../../img/up.png)](#what-is-docker-)

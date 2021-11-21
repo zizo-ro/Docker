@@ -53,7 +53,7 @@ We will now be setting up Docker Toolbox.
 
 ### If Hyper-V was previosly installed
 
-![Disable Hyper-V](Fix-HyperV-VirtualBox-Docker-Tools.png)
+![Disable Hyper-V](../../img/M-01/Fix-HyperV-VirtualBox-Docker-Tools.png)
 
 ***CLI***
 ```dos
@@ -163,5 +163,5 @@ The preceding output confirms that Docker Toolbox is working as expected and can
 
 - **Tip :** Docker Toolbox is a great addition even when you normally use Docker for Desktop for your development with Docker. Docker Toolbox allows you to create multiple Docker hosts (or VMs) in VirtualBox and connect them to a cluster, on top of which you can run Docker Swarm or Kubernetes.
 
-[![Home](../../img/M-01/up.png)](#installing-docker-toolbox)
+[![Home](../../img/up.png)](#installing-docker-toolbox)
 

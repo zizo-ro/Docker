@@ -127,5 +127,5 @@ As mentioned earlier, Docker for Desktop is only available for macOS and Windows
 Please follow the instructions at the following link to install Docker CE for your particular Linux distribution—in this case, Ubuntu: https://docs.docker.com/install/linux/docker-ce/ubuntu/.
 
 
-[![Home](../../img/M-01/up.png)](#installing-docker-for-desktop)
+[![Home](../../img/up.png)](#installing-docker-for-desktop)
 

@@ -50,4 +50,4 @@ This will clone the content of the master branch into your local folder, ~/DJK. 
 Now that we have installed the basics, let's continue with the code editor.
 
 
-[![Home](../../img/M-01/up.png)](#installing-git)
+[![Home](../../img/up.png)](#installing-git)
