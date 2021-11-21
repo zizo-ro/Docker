@@ -1,9 +1,14 @@
-[![Home](../img/home.png)](../README.md) 
-# Introduction to Docker 
+[![Home](../../img/home.png)](../README.md) 
+# M-01 : Introduction to Docker 
 
-- [M-01 : Installing](./M-01/README.md)
-- [M-02](./M-01/installing_pm.md)
-
+- [Docker ?](./M-01/what_is_docker.md)
+- [Installing and using a package manager](./M-01/installing_pm.md)
+- [Installing Git and cloning the code repository](./M-01/installing_git.md)
+- [Choosing and installing a code editor](./M-01/installing-a-code-editor.md)
+- [Installing Docker for Desktop on macOS or Windows](./M-01/Installing-Docker-for-Desktop-on-macOS-or-Windows.md)
+- [Installing Docker Toolbox](./M-01/Installing-Docker-Toolbox.md)
+- [The Linux command shell](./M-01/command-shell.md)
+- [Installing Minikube](./M-01/Installing-Minikube.md)
 
 
 # Technical requirements
@@ -13,7 +18,7 @@ It is also possible to follow along with this documentation if you have a Linux 
 I will try to indicate where commands and samples differ significantly from the ones on macOS or Windows.
 
 
-## More info :
+## Links 
 
 - Chocolatey - The Package Manager for Windows at https://chocolatey.org/
 - Install Docker Toolbox on Windows: https://dockr.ly/2nuZUkU
