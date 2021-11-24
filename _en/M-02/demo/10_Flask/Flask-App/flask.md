@@ -3,11 +3,18 @@
 
 # Flask 
 
+- [Step 1](#step-1--setting-up-the-flask-application)
+- [Step 2](#step-2--setting-up-docker)
+- [Step 3](#step-3--serving-template-files)
+- [Step 4](#step-4--updating-the-application)
+
 ## Step 1 — Setting Up the Flask Application
 
 To get started, you will create a directory structure that will hold your Flask application. This tutorial will create a directory called TestApp in /var/www, but you can modify the command to name it whatever you’d like.
 
-`mkdir test-app`
+```dos
+mkdir test-app
+```
 
  
 
@@ -22,7 +29,9 @@ cd test-app
 
 Next, create the base folder structure for the Flask application:
 
-`mkdir -p app/static app/templates`
+```dos
+mkdir -p app/static app/templates
+```
 
  
 
@@ -36,15 +45,17 @@ Now that the base folder structure is complete, create the files needed to run t
 
 Run the following command to create the file:
 
-`code app/__init__.py`
 
- 
+```dos
+code app/__init__.py
+```
+
 
 Packages in Python allow you to group modules into logical namespaces or hierarchies. This approach enables the code to be broken down into individual and manageable blocks that perform specific functions.
 
 Next, you will add code to the __init__.py that will create a Flask instance and import the logic from the views.py file, which you will create after saving this file. Add the following code to your new file:
 
-`../app/__init__.py`
+**../app/__init__.py**
 
 
 ```python
@@ -58,7 +69,9 @@ Once you’ve added that code, save and close the file.
 
 With the __init__.py file created, you’re ready to create the views.py file in your app directory. This file will contain most of your application logic.
 
-`code app/views.py`
+```dos
+code app/views.py
+```
 
  
 
@@ -85,13 +98,15 @@ With the views.py file in place, you’re ready to create the uwsgi.ini file. Th
 
 To create this file, run the following command:
 
-`code uwsgi.ini`
+```dos
+code uwsgi.ini
+```
 
  
 
 Next, add the following content to your file to configure the uWSGI server:
 
-`../uwsgi.ini`
+**../uwsgi.ini**
 
 
 ```bash
@@ -107,7 +122,10 @@ This code defines the module that the Flask application will be served from. In 
 
 Next, create the main.py file, which is the entry point to the application. The entry point instructs uWSGI on how to interact with the application.
 
-`code main.py`
+
+```dos
+code main.py
+```
 
  
 
@@ -130,7 +148,9 @@ Add the following line to add Flask as a dependency:
 
 **../requirements.txt**
 
-`Flask==1.0.2`
+```dockerfile
+Flask==1.0.2
+```
 
  
 
@@ -140,7 +160,7 @@ Save and close the file. You have successfully set up your Flask application and
 
 ## Step 2 — Setting Up Docker
 
-In this step you will create two files, Dockerfile and start.sh, to create your Docker deployment. The Dockerfile is a text document that contains the commands used to assemble the image. The start.sh file is a shell script that will build an image and create a container from the Dockerfile.
+In this step you will create two files, Dockerfile and start.ps1, to create your Docker deployment. The Dockerfile is a text document that contains the commands used to assemble the image. The start.ps1 file is a Powershell script that will build an image and create a container from the Dockerfile.
 
 First, create the Dockerfile.
 
