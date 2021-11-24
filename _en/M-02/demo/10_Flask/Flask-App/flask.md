@@ -6,7 +6,7 @@
 - [Step 1](#step-1--setting-up-the-flask-application)
 - [Step 2](#step-2--setting-up-docker)
 - [Step 3](#step-3--serving-template-files)
-- [Step 4](#step-4--updating-the-application)
+
 
 ## Step 1 — Setting Up the Flask Application
 
@@ -371,72 +371,3 @@ Visit your application at http://your-ip-address:56733/template to see the new t
 
 
 In this you’ve created a Docker template file to serve visitors on your application. In the next step you will see how the changes you make to your application can take effect without having to restart the Docker container.
-
-# Step 4 — Updating the Application
-
-Sometimes you will need to make changes to the application, whether it is installing new requirements, updating the Docker container, or HTML and logic changes. In this section, you will configure touch-reload to make these changes without needing to restart the Docker container.
-
-Python autoreloading watches the entire file system for changes and refreshes the application when it detects a change. Autoreloading is discouraged in production because it can become resource intensive very quickly. In this step, you will use touch-reload to watch for changes to a particular file and reload when the file is updated or replaced.
-
-To implement this, start by opening your uwsgi.ini file:
-
-```bash
-code uwsgi.ini
-```
-
-
-Next, add the highlighted line to the end of the file:
-
-**/uwsgi.ini**
-
-```python
-module = main
-callable = app
-master = true
-touch-reload = /app/uwsgi.ini
-```
-
-
-This specifies a file that will be modified to trigger an entire application reload. Once you’ve made the changes, save and close the file.
-
-To demonstrate this, make a small change to your application. Start by opening your app/views.py file:
-
-```powershell
-code  app\views.py
-```
-
- 
-
-Replace the string returned by the home function:
-
-**..\app\views.py**
-
-
-```python
-from flask import render_template
-from app import app
-
-@app.route('/')
-def home():
-    return "<b>There has been a change</b>"
-
-@app.route('/template')
-def template():
-    return render_template('home.html')
-```
-
- 
-
-Save and close the file after you’ve made a change.
-
-Next, if you open your application’s homepage at http://localhost:56733, you will notice that the changes are not reflected. This is because the condition for reload is a change to the uwsgi.ini file. To reload the application, use touch to activate the condition:
-
-**touch uwsgi.ini**
-
- 
-
-Reload the application homepage in your browser again. You will find that the application has incorporated the changes:
-
-Homepage Updated
-
-In this step, you set up a touch-reload condition to update your application after making changes.
