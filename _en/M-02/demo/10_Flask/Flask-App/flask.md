@@ -253,11 +253,17 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 58b05508f4dd        test-app         "/entrypoint.sh /sta…"   12 seconds ago      Up 3 seconds       443/tcp, 0.0.0.0:56733->80/tcp      test-app
 ```
 
-You will find that the docker.test container is running. Now that it is running, visit the IP address at the specified port in your browser: http://ip-address:56733
+You will find that the docker.test container is running. Now that it is running, visit the IP address at the specified port in your browser:
+
+```html
+http://localhost:56733
+```
 
 You’ll see a page similar to the following:
 
-the home page
+![eirc](../../../../../img/M-02/demo/srv_img1.png)
+
+
 
 In this step you have successfully deployed your Flask application on Docker. Next, you will use templates to display content to users.
 
@@ -361,7 +367,8 @@ docker start test-app
 
 Visit your application at http://your-ip-address:56733/template to see the new template being served.
 
-**homepage**
+![eirc](../../../../../img/M-02/demo/srv_img2.png)
+
 
 In this you’ve created a Docker template file to serve visitors on your application. In the next step you will see how the changes you make to your application can take effect without having to restart the Docker container.
 
