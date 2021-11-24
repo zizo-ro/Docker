@@ -9,3 +9,6 @@ https://www.geeksforgeeks.org/build-test-and-deploy-a-flask-rest-api-application
 
 Quiz :
 ??
+
+- M-02
+https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-18-04
