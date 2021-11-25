@@ -11,5 +11,7 @@ RUN apt-get update \
   && mkdir -p  /app 
 WORKDIR /app
 COPY ./requirements.txt /app/
-COPY ./main.py /app/
-CMD ["python3", "main.py"]
+COPY ./jockes.csv /app/
+RUN pip install -r /app/requirements.txt
+COPY ./app.py /app/
+CMD ["python3", "app.py"]

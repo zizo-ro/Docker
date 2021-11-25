@@ -11,8 +11,18 @@ data = read_csv("jockes.csv")
 ID= data['ID'].tolist()
 joke = data['Joke'].tolist()
 
+Logo = """
+   '||'                 '||             
+    ||    ...     ....   ||  ..   ....  
+    ||  .|  '|. .|   ''  || .'   ||. '  
+    ||  ||   || ||       ||'|.   . '|.. 
+|| .|'   '|..|'  '|...' .||. ||. |'..|' 
+ '''                                   
+"""
+
+print( Logo )
 
 while True:
     time.sleep(5)
     r=random.randint(0,ID[-1])
-    print( "ID :"+ str(ID[r])+" Joke :"+joke[r] )
+    print( "ID : "+ str(ID[r])+" |  "+joke[r] )
