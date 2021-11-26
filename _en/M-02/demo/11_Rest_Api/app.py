@@ -27,4 +27,4 @@ print( Logo )
 while True:
     time.sleep(5)
     r=random.randint(0,ID[-1])
-    print( "ID : "+ str(ID[r])+"   |  "+joke[r] )
+    print( "ID : "+ str(ID[r])+" |  "+joke[r] )
