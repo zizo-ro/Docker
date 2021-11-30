@@ -20,4 +20,8 @@ https://examples.javacodegeeks.com/create-a-web-app-with-python-flask-and-postgr
 
 https://docs.docker.com/samples/django/
 
+https://github.com/jaimebuelta/django-docker-template
+
+
+
 

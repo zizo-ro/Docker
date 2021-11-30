@@ -5,9 +5,11 @@
 
 - [M-01 : Installing](./M-01/README.md)
 - [M-02 : Mastering Containers](./M-02/README.md)
-    - **Demo** :
+    - **Example :** 
         
-        - [10 - Flask](M-02/demo/10_Flask/Flask-App/flask.md)
+        - [10 - Flask](M-02/Example/10_Flask/Flask-App/flask.md)
+        - [11 - Python App - Jocks ](M-02/Example/11_Python_Random_Jocks/Python-App.md)
+    
 
 
 
