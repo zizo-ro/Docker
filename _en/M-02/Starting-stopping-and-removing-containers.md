@@ -140,20 +140,27 @@ Each response is a different Trivia question.
 Now, let's run this logic in an **Ubuntu** container. Since this is not just a simple command, we want to wrap the preceding script in a script file and execute that one. To make things simpler, I have created a Docker image called **Trivia** that contains all of the necessary logic, so that we can just use it here. Later on, once we have introduced Docker images, we will analyze this container image further. For the moment, let's just use it as is. 
 There are also command line options to configure it more such as **-t** to allocate a **pseudo-tty** to the process, and **-i** to keep STDIN open even if not attached. 
 
+# Python Random Trivia
+
 Importantly, the --rm option tells Docker to automatically remove the container when it exits. This example shows how to start a Docker container in foreground mode:
 
 cd ..M-02\Example\11_Python_Random_Trivia
 
 ```
 docker build -t random_trivia .  
-docker container run -it -d --name random_trivia-container  random_trivia   
+docker container run -it --rm  --name random_trivia-container  random_trivia   
 
 ```
 In the preceding expression, we have used two new command-line parameters, **-d** and **--name**. Now, **-d** tells Docker to run the process running in the container as a Linux daemon. The **--name** parameter, in turn, can be used to give the container an explicit name. In the preceding sample, the name we chose is *random_trivia-container*.
 
+
+```dos
+docker container run -it --rm -d --name random_trivia-container  random_trivia
+```
+
 If we don't specify an explicit container name when we run a container, then Docker will automatically assign the container a random but unique name. This name will be composed of the name of a famous scientist and an adjective. Such names could be **boring_borg** or **angry_goldberg**. They're quite humorous, our Docker engineers, aren't they?
 
-One important takeaway is that the container name has to be unique on the system. Let's make sure that the jockes container is up and running:
+One important takeaway is that the container name has to be unique on the system. Let's make sure that the Trivia container is up and running:
 
 ```
 docker container ls -l
