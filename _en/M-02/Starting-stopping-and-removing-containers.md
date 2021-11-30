@@ -142,7 +142,7 @@ There are also command line options to configure it more such as **-t** to alloc
 
 Importantly, the --rm option tells Docker to automatically remove the container when it exits. This example shows how to start a Docker container in foreground mode:
 
-cd ..M-02\demo\11_Rest_Api
+cd ..M-02\Example\11_Python_Random_Trivia
 
 ```
 docker build -t random_trivia .  
