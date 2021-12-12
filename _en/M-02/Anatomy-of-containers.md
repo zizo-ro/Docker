@@ -21,24 +21,11 @@ In the lower part of the preceding diagram, we have the Linux operating system w
 Let's now describe the main building blocks in a bit more detail.
 
 # Namespaces
-Linux namespaces had been around for years before they were leveraged by Docker for their containers. A namespace is an abstraction of global resources such as filesystems, network access, and process trees (also named PID namespaces) or the system group IDs and user IDs. A Linux system is initialized with a single instance of each namespace type. After initialization, additional namespaces can be created or joined.
 
-The Linux namespaces originated in 2002 in the 2.4.19 kernel. In kernel version 3.8, user namespaces were introduced and with it, namespaces were ready to be used by containers.
 
-If we wrap a running process, say, in a filesystem namespace, then this process has the illusion that it owns its own complete filesystem. This, of course, is not true; it is only a virtual filesystem. From the perspective of the host, the contained process gets a shielded subsection of the overall filesystem. It is like a filesystem in a filesystem:
+Docker uses a technology called **namespaces** to provide the isolated workspace called the container. When you run a container, Docker creates a set of namespaces for that container.
 
-![AC](../../img/M-02/l2-ac-p2.png)
-
-Filesystem namespaces on Linux
-The same applies to all of the other global resources for which namespaces exist. The user ID namespace is another example. Having a user namespace, we can now define a **jdoe** user many times on the system as long as it is living in its own namespace.
-
-The PID namespace is what keeps processes in one container from seeing or interacting with processes in another container. A process might have the apparent **PID 1**inside a container, but if we examine it from the host system, it would have an ordinary PID, say **334**:
-
-![AC](../../img/M-02/l2-ac-p3.png)
-
-Process tree on a Docker host
-
-In a given namespace, we can run one to many processes. That is important when we talk about containers, and we have experienced that already when we executed another process in an already-running container.
+These namespaces provide a layer of isolation. Each aspect of a container runs in a separate namespace and its access is limited to that namespace.
 
 # Control groups (cgroups)
 Linux cgroups are used to limit, manage, and isolate resource usage of collections of processes running on a system. Resources are CPU time, system memory, network bandwidth, or combinations of these resources, and so on.

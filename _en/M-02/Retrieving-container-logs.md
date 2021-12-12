@@ -5,10 +5,10 @@ It is a best practice for any good application to generate some logging informat
 
 When running inside a container, the application should preferably output the log items to **STDOUT** and **STDERR**and not into a file. If the logging output is directed to **STDOUT** and **STDERR**, then Docker can collect this information and keep it ready for consumption by a user or any other external system:
 
-- To access the logs of a given container, we can use the docker container logs command. If, for example, we want to retrieve the logs of our trivia container, we can use the following expression:
+- To access the logs of a given container, we can use the docker container logs command. If, for example, we want to retrieve the logs of our random_trivia-container container, we can use the following expression:
 
 ```
-$ docker container logs trivia
+docker container logs random_trivia-container
 ```
 
 This will retrieve the whole log produced by the application from the very beginning of its existence.
@@ -18,7 +18,7 @@ This will retrieve the whole log produced by the application from the very begin
 If we want to only get a few of the latest entries, we can use the **-t** or **--tail** parameter, as follows:
 
 ```
-$ docker container logs --tail 5 trivia
+docker container logs --tail 5 random_trivia-container
 ```
 
 This will retrieve only the last five items the process running inside the container produced.
@@ -26,7 +26,7 @@ This will retrieve only the last five items the process running inside the conta
 Sometimes, we want to follow the log that is produced by a container. This is possible when using the **-f** or **--follow** parameter. The following expression will output the last five log items and then follow the log as it is produced by the containerized process:
 
 ```
-$ docker container logs --tail 5 --follow trivia 
+docker container logs --tail 5 --follow random_trivia-container 
 ```
 
 Often using the default mechanism for container logging is not enough. We need a different way of logging. This is discussed in the following section.
@@ -41,6 +41,7 @@ Docker includes multiple logging mechanisms to help us to get information from r
 # Using a container-specific logging driver
 We have seen that the logging driver can be set globally in the Docker daemon configuration file. But we can also define the logging driver on a container by container basis. In the following example, we are running a **busybox** container and use the **--log-driver** parameter to configure the none logging driver:
 
+- Run in wsl
 ```
 docker container run --name test -it --log-driver none   busybox sh -c 'for N in 1 2 3; do echo "Hello $N"; done'
 ```
@@ -56,7 +57,7 @@ Now, let's try to get the logs of the preceding container:
 
 
 ```
-$ docker container logs test
+docker container logs test
 ```
 
 The output is as follows:
@@ -67,7 +68,7 @@ Error response from daemon: configured logging driver does not support reading
 This is to be expected since the **none** driver does not produce any logging output. Let's clean up and remove the **test** container:
 
 ```
-$ docker container rm test
+docker container rm test
 ```
 
 # Advanced topic – changing the default logging driver
@@ -107,7 +108,7 @@ The preceding definition tells the Docker daemon to use the **json-log** driver 
 Now we have to send a **SIGHUP** signal to the Docker daemon so that it picks up the changes in the configuration file:
 
 ```
-$ sudo kill -SIGHUP $(pidof dockerd)
+sudo kill -SIGHUP $(pidof dockerd)
 ```
 
 Note that the preceding command only reloads the config file and does not restart the daemon.
