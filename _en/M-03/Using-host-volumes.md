@@ -20,8 +20,8 @@ Developers use these techniques all the time when they are working on their appl
 
 First, let's create a new folder on the host, where we will put our web assets—such as HTML, CSS, and JavaScript files—and navigate to it, like this:
 ```
-$ mkdir ~/my-web 
-$ cd ~/my-web 
+$ mkdir ~/M-03/Example/my-web
+$ cd ~/M-03/Example/my-web
 ```
 Then, we create a simple web page, like this:
 
@@ -74,7 +74,7 @@ This time, when you refresh the browser, the new content should be shown. Well, 
 
 Now is the time to use host-mounted volumes. Once again, remove the current container and rerun it with the volume mount, like this:
 
-Navigate to **~\DJK\Lab-03..\sample\**
+Navigate to **~/M-03/Example\**
 
 ```
 $ docker container rm -f my-site

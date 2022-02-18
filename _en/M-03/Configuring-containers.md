@@ -96,7 +96,7 @@ Let's try this out, as follows:
 Create a fod/05 folder and navigate to it, like this:
 
 ```
-$ cd ~\DJK\Lab-03-DataVolume\sample\env-file
+$ cd ~\M-03\Example\env-file
 ```
 
 Use your favorite editor to create a file called **development.config** in this folder. Add the following content to the file, and save it, as follows:
