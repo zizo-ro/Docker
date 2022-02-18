@@ -14,7 +14,6 @@ Nicola Kabar, a former Docker employee, has created a handy Docker image called 
 "Purpose: Docker and Kubernetes network troubleshooting can become complex. With proper understanding of how Docker and Kubernetes networking works and the right set of tools, you can troubleshoot and resolve these networking issues. The netshoot container has a set of powerful networking troubleshooting tools that can be used to troubleshoot Docker networking issues."- Nicola Kabar
 
 - https://hub.docker.com/r/nicolaka/netshoot 
-- 
 To use this container for debugging purposes, we can proceed as follows:
 
 - Spin up a throwaway bastion container for debugging on Kubernetes, using the following command:
