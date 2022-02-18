@@ -21,6 +21,8 @@
  
 - [M-10 : Orchestrators](M-10/README.md)
 - [M-11 : Kubernets](M-11/README.md)
+- [M-12 : Deploying, Updating, and Securing an Application with Kubernetes](M-12/README.md)
+- 
 
 
 ## Technical requirements

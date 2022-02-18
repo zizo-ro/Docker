@@ -1,3 +1,4 @@
+[![Home](../../img/home.png)](../M-12/README.md)
 # Deploying a first application
 We will take our pets application, which we first introduced in Chapter, Docker Compose, and deploy it into a Kubernetes cluster. Our cluster will be Minikube, which, as you know, is a single-node cluster. However, from the perspective of a deployment, it doesn't really matter how big the cluster is and where the cluster is located in the cloud, in your company's data center, or on your personal workstation.
 

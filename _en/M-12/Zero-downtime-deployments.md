@@ -1,3 +1,4 @@
+[![Home](../../img/home.png)](../M-12/README.md)
 # Zero downtime deployments
 In a mission-critical environment, it is important that the application is always up and running. These days, we cannot afford any downtime anymore. Kubernetes gives us various means of achieving this. Performing an update on an application in the cluster that causes no downtime is called a zero downtime deployment. In this section, we will present two ways of achieving this. These are as follows:
 

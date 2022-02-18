@@ -1,3 +1,4 @@
+[![Home](../../img/home.png)](../M-12/README.md)
 # Defining liveness and readiness
 
 Container orchestration systems such as Kubernetes and Docker swarm make it significantly easier to deploy, run, and update highly distributed, mission-critical applications. The orchestration engine automates many of the cumbersome tasks such as scaling up or down, asserting that the desired state is maintained at all times, and more.

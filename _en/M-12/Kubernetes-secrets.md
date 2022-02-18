@@ -1,3 +1,4 @@
+[![Home](../../img/home.png)](../M-12/README.md)
 # Kubernetes secrets
 Sometimes, services that we want to run in the Kubernetes cluster have to use confidential data such as passwords, secret API keys, or certificates, to name just a few. We want to make sure that this sensitive information can only ever be seen by the authorized or dedicated service. All other services running in the cluster should not have any access to this data.
 
