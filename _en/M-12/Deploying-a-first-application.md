@@ -9,7 +9,7 @@ Just as a reminder, our application consists of two application services: the No
 ![ausa](./img/m13-ausa-p1.png)
 
 Kubernetes deployment definition for the web component 
-The preceding deployment definition can be found in the **web-deployment.yaml** file in the **~/lab-13-../sample** folder. The lines of code are as follows:
+The preceding deployment definition can be found in the **web-deployment.yaml** file in the **~/M-12/sample** folder. The lines of code are as follows:
 
 - On line **4**: We define the name for our **Deployment** object as **web**.
 - On line **6**: We declare that we want to have one instance of the **web** component running.
@@ -47,7 +47,7 @@ Listing all resources running in Minikube
 
 In the preceding output, we can see that Kubernetes created three objects – the deployment, a pertaining ReplicaSet, and a single pod (remember that we specified that we want one replica only). The current state corresponds to the desired state for all three objects, so we are fine so far.
 
-Now, the web service needs to be exposed to the public. For this, we need to define a Kubernetes Service object of the NodePort type. Here is the definition, which can be found in the web-service.yaml file in the ~/lab-13-../sample folder:
+Now, the web service needs to be exposed to the public. For this, we need to define a Kubernetes Service object of the NodePort type. Here is the definition, which can be found in the web-service.yaml file in the ~/M-12/sample folder:
 
 ![ausa](./img/m13-ausa-p2.png)
 
@@ -110,7 +110,7 @@ OK, the response is **Pets Demo Application**, which is what we expected. The we
 # Deploying the database
 A database is a stateful component and has to be treated differently to stateless components, such as our web component. We discussed the difference between stateful and stateless components in a distributed application architecture in detail in , Distributed Application Architecture, and , Orchestrators.
 
-Kubernetes has defined a special type of **ReplicaSet** object for stateful components. The object is called a **StatefulSet**. Let's use this kind of object to deploy our database. The definition can be found in the **~Lab-13-.../sample/db-stateful-set.yaml** file. The details are as follows:
+Kubernetes has defined a special type of **ReplicaSet** object for stateful components. The object is called a **StatefulSet**. Let's use this kind of object to deploy our database. The definition can be found in the **~M-12./sample/db-stateful-set.yaml** file. The details are as follows:
 
 ![dsa](./img/m13-ausa-p3.png)
 
@@ -151,7 +151,7 @@ The StatefulSet and its pod
 
 Here, we can see that a **StatefulSet** and a pod have been created. For both, the current state corresponds to the desired state and thus the system is healthy. But that doesn't mean that the web component can access the database at this time. Service discovery won't work so far. Remember that the web component wants to access the **db** service under the name **db**.
 
-To make service discovery work inside the cluster, we have to define a Kubernetes Service object for the database component too. Since the database should only ever be accessible from within the cluster, the type of Service object we need is ClusterIP. Here is the specification, which can be found in the **~/Lab-13-.../sample/db-service.yaml** file:
+To make service discovery work inside the cluster, we have to define a Kubernetes Service object for the database component too. Since the database should only ever be accessible from within the cluster, the type of Service object we need is ClusterIP. Here is the specification, which can be found in the **~/M-12./sample/db-service.yaml** file:
 
 ![dfa](./img/m13-ausa-p4.png)
 
@@ -232,7 +232,7 @@ spec:
     service: web
 ```
 
-Here, we have collected all four object definitions for the pets application in the ~/Lab-13-.../pets.yaml file, and we can deploy the application in one go:
+Here, we have collected all four object definitions for the pets application in the ~/M-12./pets.yaml file, and we can deploy the application in one go:
 
 ```
 kubectl create -f pets.yaml
@@ -241,7 +241,7 @@ kubectl create -f pets.yaml
 
 Using a single script to deploy the pets application
 
-Similarly, we have created a script called ~/Lab-13-...//remove-pets.sh to remove all the artifacts of the pets application from the Kubernetes cluster:
+Similarly, we have created a script called ~/M-12.//remove-pets.sh to remove all the artifacts of the pets application from the Kubernetes cluster:
 ```
 .\remove-pets.ps1
 service "web" deleted
