@@ -9,6 +9,7 @@
 - [M-04 : Networking](M-04/README.md#single-host-networking)
 - [M-05 : Supercharge Automation](M-05/README.md#using-docker-to-supercharge-automation)
 - [M-06 : Advanced Docker Usage Scenarios](M-06/README.md)
+- [M-07 : Distributed Application Architecture](M-07/README.md)
  
 
 
