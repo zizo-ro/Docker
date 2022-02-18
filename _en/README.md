@@ -6,7 +6,7 @@
 - [M-01 : Installing](./M-01/README.md)
 - [M-02 : Mastering Containers](./M-02/README.md)
     - **Example :** 
-        - [1 - Build_Ping](M-02/Example/1_Build_Ping/Dockerfile)
+        - [1 - Build_Ping](M-02/Creating-images.md#the-cmd-and-entrypoint-keywords)
         - [2 - Build_add_curl](M-02/Example/2_Build_add_curl/Dockerfile)
         - [3 - Build_Go_App](M-02/Example/3_Build_Go_App/Dockerfile)
         - [4 - Build_wGet](M-02/Example/4_Build_wGet/Dockerfile)

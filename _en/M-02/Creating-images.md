@@ -58,7 +58,7 @@ Installing **ping** on Alpine
 Using ping from within the container
 
 - Once we have finished our customization, we can quit the container by typing exit at the prompt.
-- 
+
 If we now list all containers with the ls **-a** Docker container, we can see that our sample container has a status of **Exited**, but still exists on the system, as shown in the following code block:
 
 ***CLI***
@@ -115,7 +115,8 @@ With the preceding command, we have specified that the new image will be called 
 - We can verify this by listing all images on our system, as follows:
 
 ***CLI***
-``` docker image ls
+``` 
+docker image ls
 ```
 
 We can see this image ID (shortened) as follows:
