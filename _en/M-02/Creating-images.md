@@ -351,7 +351,8 @@ We can now build an image called pinger from the preceding Dockerfile, as follow
 
 
 ***CLI***
-``` docker image build -t pinger .
+``` 
+docker image build -t pinger .
 ```
 Then, we can run a container from the pinger image we just created, like this:
 
@@ -422,7 +423,7 @@ Let's look at a concrete example and build a simple Docker image, as follows:
 
 ***CLI***
 ``` 
-cd  ~\Docker\_en\M-02\sample
+cd  ~\Docker\_en\M-02\Example\4_Build_wGet
 ```
 
 In the preceding folder, create a sample1 subfolder and navigate to it, like this:
