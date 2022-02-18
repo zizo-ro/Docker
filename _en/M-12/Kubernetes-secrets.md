@@ -107,7 +107,7 @@ Let's say we want to create a Deployment object where the web component uses our
 $ kubectl create -f pets-secret.yaml
 ```
 
-In the **~/Lab-13-.../sample/web-deploy-secret.yaml** file, we can find the definition of the Deployment object. We had to add the part starting from line 23 to the original definition of the **Deployment** object:
+In the **~\M-12\sample\web-deploy-secret.yaml** file, we can find the definition of the Deployment object. We had to add the part starting from line 23 to the original definition of the **Deployment** object:
 
 ![KS](./img/m13-zdd-p5.png)
 

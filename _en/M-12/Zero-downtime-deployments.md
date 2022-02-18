@@ -10,7 +10,7 @@ Let's start by discussing rolling updates.
 # Rolling updates
 In the previous chapter, we learned that the Kubernetes Deployment object distinguishes itself from the ReplicaSet object in that it adds rolling updates and rollbacks on top of the latter's functionality. Let's use our web component to demonstrate this. Evidently, we will have to modify the manifest or description of the deployment for the web component.
 
-We will use the same deployment definition as in the previous section, with one important difference – we will have five replicas of the web component running. The following definition can also be found in the **~\Lab-13-...\sample\web-deploy-rolling-v1.yaml**file:
+We will use the same deployment definition as in the previous section, with one important difference – we will have five replicas of the web component running. The following definition can also be found in the **~\M-12\sample\web-deploy-rolling-v1.yaml**file:
 
 ```
 apiVersion: apps/v1
