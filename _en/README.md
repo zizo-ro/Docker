@@ -5,7 +5,7 @@
 
 - [M-01 : Installing](./M-01/README.md)
 - [M-02 : Mastering Containers](./M-02/README.md)
-- [M-03 : Data Volumes and Configuration ](M-03/Readme.md#m-03---data-volumes-and-configuration)
+- [M-03 : Data Volumes and Configuration ](M-03/README.md)
  
 
 
