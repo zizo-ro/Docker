@@ -1,3 +1,4 @@
+[![Home](../../img/home.png)](../README.md) 
 # Deploying, Updating, and Securing an Application with Kubernetes
 
 In the previous chapter, we learned about the basics of the container orchestrator, Kubernetes. We got a high-level overview of the architecture of Kubernetes and learned a lot about the important objects used by Kubernetes to define and manage a containerized application. 
