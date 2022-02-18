@@ -15,7 +15,7 @@
 
 # Introduction to Jenkins
 
-- [M-09 : Jenkins][Jenkins](M-09/README.md)
+- [M-09 : Jenkins](M-09/README.md)
 
 # Introduction to Kubernets
  
