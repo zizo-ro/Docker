@@ -38,7 +38,7 @@ Note that we are using **version 2.x** of the Docker Compose file syntax. This i
 Navigate to the ch11 subfolder of the fods folder and then build the images:
 
 ```
-~\Lab-10-Docker-Compose\sample\docker-compose
+~\M-08\sample\docker-compose
 docker-compose build
 
 docker-compose -f docker-compose-default.yml up -d
