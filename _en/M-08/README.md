@@ -13,7 +13,7 @@ This chapter introduces the concept of an application consisting of multiple ser
 
 
 # Technical requirements
-The code accompanying this chapter can be found at https://github.com/fredy-ssa/DJK
+The code accompanying this chapter can be found at https://github.com/zizo-ro/Docker
 ```
 # Download code
 git pull https://github.com/Fredy-SSA/jenkins-pipeline.git
