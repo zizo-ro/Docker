@@ -23,6 +23,7 @@
 - [M-11 : Kubernets](M-11/README.md)
 - [M-12 : Deploying, Updating, and Securing an Application with Kubernetes](M-12/README.md)
 - [M-13 : Monitoring and Troubleshooting an App Running in Production](M-13/README.md)
+- [M-14 : Running a Containerized App in the Cloud](M-14/README.md)
 
 
 
