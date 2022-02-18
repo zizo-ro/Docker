@@ -18,7 +18,7 @@ data:
   password: c0VjcmV0LXBhc1N3MHJECg==
 ```
 
-The preceding definition can be found in the **~/Lab-13.../sample/pets-secret.yam**l file. Now, you might be wondering what the values are. Are these the real (unencrypted) values? No, they are not. And they are also not really encrypted values, but just base64-encoded values. Thus, they are not really secure, since base64-encoded values can be easily reverted to clear text values. How did I get these values? That's easy: follow these steps:
+The preceding definition can be found in the **~/M-12./sample/pets-secret.yam**l file. Now, you might be wondering what the values are. Are these the real (unencrypted) values? No, they are not. And they are also not really encrypted values, but just base64-encoded values. Thus, they are not really secure, since base64-encoded values can be easily reverted to clear text values. How did I get these values? That's easy: follow these steps:
 
 1. Use the base64 tool as follows to encode the values:
 

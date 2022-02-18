@@ -58,7 +58,7 @@ Pets Demo Application
 
 As we can see, the application is up and running and returns the expected message, **Pets Demo Application**.
 
-Now. our developers have created a new version, 2.1, of the web component. The code of the new version of the web component can be found in the **~/Lab-13../sample/web**folder, and the only change is located on line 12 of the server.js file:
+Now. our developers have created a new version, 2.1, of the web component. The code of the new version of the web component can be found in the **~/M-12/sample/web**folder, and the only change is located on line 12 of the server.js file:
 
 ![zdd](./img/m13-zdd-p1.png)
 
@@ -177,14 +177,14 @@ Let's define a Deployment object for version 1, blue:
 ![zdd](./img/m13-zdd-p2.png)
 
 Specification of the blue deployment for the web component
-The preceding definition can be found in the **~/Lab-13.../sample/web-deploy-blue.yaml** file. Please take note of line **4**, where we define the name of the deployment as **web-blue** to distinguish it from the upcoming deployment, **web-green**. Also, note that we have added the label **color: blue** on lines **11** and **17**. Everything else remains the same as before.
+The preceding definition can be found in the **~/M-12./sample/web-deploy-blue.yaml** file. Please take note of line **4**, where we define the name of the deployment as **web-blue** to distinguish it from the upcoming deployment, **web-green**. Also, note that we have added the label **color: blue** on lines **11** and **17**. Everything else remains the same as before.
 
 Now, we can define the Service object for the web component. It will be the same as the one we used before but with a minor change, as shown in the following screenshot:
 
 ![zdd](./img/m13-zdd-p3.png)
 
 Kubernetes service for the web component supporting blue-green deployments
-The only difference regarding the definition of the service we used earlier in this chapter is line **13**, which adds the **color: blue**label to the selector. We can find the preceding definition in the **~/Lab-13../sample/web-svc-blue-green.yaml** file.
+The only difference regarding the definition of the service we used earlier in this chapter is line **13**, which adds the **color: blue**label to the selector. We can find the preceding definition in the **~/M-12/sample/web-svc-blue-green.yaml** file.
 
 Then, we can deploy the blue version of the web component with the following command:
 
@@ -204,7 +204,7 @@ curl $Uri/
 Pets Demo Application
 ```
 
-As expected, we get the response Pets Demo Application. Now, we can deploy the green version of the web component. The definition of its Deployment object can be found in the **~/Lab-13../sample/web-deploy-green.yaml** file and looks as follows:
+As expected, we get the response Pets Demo Application. Now, we can deploy the green version of the web component. The definition of its Deployment object can be found in the **~/M-12/sample/web-deploy-green.yaml** file and looks as follows:
 
 ![zdd](./img/m13-zdd-p4.png)
 
@@ -269,6 +269,6 @@ kubectl delete service/web
 kubectl get all 
 ```
 
-When we're ready to deploy a new version, **3.0**, this one becomes the blue version. We update the **~/Lab-13../sample//web-deploy-blue.yaml** file accordingly and deploy it. Then, we flip the service web from **green** to **blue**, and so on.
+When we're ready to deploy a new version, **3.0**, this one becomes the blue version. We update the **~/M-12/sample//web-deploy-blue.yaml** file accordingly and deploy it. Then, we flip the service web from **green** to **blue**, and so on.
 
 We have successfully demonstrated, with our component web of the pets application, how blue-green deployment can be achieved in a Kubernetes cluster.
