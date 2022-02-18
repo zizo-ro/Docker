@@ -16,7 +16,7 @@ Here is a list of the topics we're going to discuss:
 # Technical requirements
 For this chapter, you need either Docker Toolbox installed on your machine or access to a Linux virtual machine (VM) running Docker on your laptop or in the cloud. Furthermore, it is advantageous to have Docker for Desktop installed on your machine. 
 
-Code are in ~\Lab-03..\sample.
+**Code are in ~\M-03\Example.**
 
 # Summary
 In this chapter, we have introduced Docker volumes that can be used to persist states produced by containers and make them durable. We can also use volumes to provide containers with data originating from various sources. We have learned how to create, mount, and use volumes. We have learned various techniques of defining volumes such as by name, by mounting a host directory, or by defining volumes in a container image.

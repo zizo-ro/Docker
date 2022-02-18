@@ -1,3 +1,4 @@
+[![Home](../../img/home.png)](../M-03/README.md)
 # **Creating and mounting data volumes**
 All meaningful applications consume or produce data. Yet containers are, preferably, meant to be stateless. How are we going to deal with this? One way is to use Docker volumes. Volumes allow containers to consume, produce, and modify a state. Volumes have a life cycle that goes beyond the life cycle of containers. When a container that uses a volume dies, the volume continues to exist. This is great for the durability of the state.
 

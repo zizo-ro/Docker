@@ -1,3 +1,4 @@
+[![Home](../../img/home.png)](../M-03/README.md)
 # **Configuring containers**
 More often than not, we need to provide some configuration to the application running inside a container. The configuration is often used to allow one and the same container to run in very different environments, such as in development, test, staging, or production environments. 
 
