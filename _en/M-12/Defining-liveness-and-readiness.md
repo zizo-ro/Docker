@@ -86,7 +86,7 @@ This looks very similar. The only change is that the type of probe has been chan
 
 Let's try this out:
 
-Navigate to the **~/Lab-13-.../sample/probes** folder and build the Docker image with the following command:
+Navigate to the **~/M-12/sample/probes** folder and build the Docker image with the following command:
 
 ```
 docker-compose build
