@@ -20,9 +20,10 @@
 # Introduction to Kubernets
  
 - [M-10 : Orchestrators](M-10/README.md)
+- [M-11 : Kubernets](M-11/README.md)
 
 
-### Technical requirements
+## Technical requirements
 For this chapter, you will need a laptop or a workstation with either macOS or Windows, preferably Windows 10 Professional, installed. You should also have free internet access to download applications and permission to install those applications on your laptop.
 
 It is also possible to follow along with this documentation if you have a Linux distribution as your operating system, such as Ubuntu 18.04 or newer. 
