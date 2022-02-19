@@ -33,6 +33,8 @@ node {
        def app = docker.build("fredysa/docker-nodejs-demo:${commit_id}", '.').push()
      }                                     
    }                                       
-}                                          
+}             
+
+ss                             
 
 ```
