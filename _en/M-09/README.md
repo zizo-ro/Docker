@@ -13,7 +13,7 @@ Jenkins offers a simple way to set up a continuous integration or **continuous d
 
 - [Prepare / Install Jenkins ](install-jenkins.md)
 - [Prepare GIT](Git-Jenkins.md)
-- [Jenkins example ][Jenkins example](Sample.md)
+- [Jenkins example ](Sample.md)
 
 
 
