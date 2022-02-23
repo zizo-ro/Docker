@@ -8,7 +8,7 @@ cat sample.txt | perl -lpe 's/^\s*//'
 
 As it turns out, you don't have Perl installed on your working machine. What can you do? Install Perl on the machine? Well, that would certainly be an option, and it's exactly what most developers or system admins do. But wait a second, you already have Docker installed on your machine. Can't we use Docker to circumvent the need to install Perl? Yes, we can. This is how we're going to do it:
 
-Create a folder, **c:\DJK\Lab-05-Supercharge-Automation\sample\simple-task**, and navigate to it:
+Create a folder, **C:\Docker\_en\M-05\sample\simple-task**, and navigate to it:
 
 In this folder, create a sample.txt file with the following content:
 ```
