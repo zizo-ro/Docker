@@ -100,7 +100,7 @@ One of the great features of a container, apart from encapsulating application p
  docker container run --rm -it `
     --name stress-test `
     --memory 512M `
-    ubuntu:19.04 /bin/bash
+    ubuntu:20.04 /bin/bash
 ```
 
 
