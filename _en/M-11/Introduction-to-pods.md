@@ -167,7 +167,7 @@ When creating a pod in a Kubernetes cluster, we can use either an imperative or 
 
 Thus, in this chapter, we will exclusively concentrate on the declarative approach. Manifests or specifications for a pod can be written using either the YAML or JSON formats. In this chapter, we will concentrate on YAML since it is easier to read for us humans. 
 
-Let's look at a sample specification. Here is the content of the **pod.yaml** file, which can be found in the **~/lab-12-../sample** subfolder of our labs folder:
+Let's look at a sample specification. Here is the content of the **pod.yaml** file, which can be found in the **~/lab-11-../sample** subfolder of our labs folder:
 
 ```
 apiVersion: v1
