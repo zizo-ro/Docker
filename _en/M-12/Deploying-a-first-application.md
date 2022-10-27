@@ -243,7 +243,7 @@ Using a single script to deploy the pets application
 
 Similarly, we have created a script called ~/M-12.//remove-pets.sh to remove all the artifacts of the pets application from the Kubernetes cluster:
 ```
-.\remove-pets.ps1
+kubectl delete -f pets.yaml
 service "web" deleted
 service "db" deleted
 deployment.apps "web" deleted
