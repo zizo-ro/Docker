@@ -65,17 +65,17 @@ Now. our developers have created a new version, 2.1, of the web component. The c
 Code change for version 2.0 of the web component
 The developers have built the new image as follows:
 ```
-$ docker image build -t fredysa/web:2.1 .
+docker image build -t fredysa/web:2.1 .
 ```
 Subsequently, they pushed the image to Docker Hub, as follows:
 
 ```
-$ docker image push fredysa/web:2.1
+docker image push fredysa/web:2.1
 ```
 Now, we want to update the image that's used by our pods that are part of the web Deployment object. We can do this by using the set image command of kubectl:
 
 ```
-$ kubectl set image deployment/web  web=fredysa/web:2.1
+kubectl set image deployment/web  web=fredysa/web:2.1
 
 ```
 
@@ -141,7 +141,7 @@ Here, we can see that the new ReplicaSet has five instances running and that the
 To roll back the update of the image in case some undetected bug sneaked into the new code, we can use the rollout undo command: 
 
 ```
-$ kubectl rollout undo deploy/web
+kubectl rollout undo deploy/web
 deployment "web"
 
 $Port = kubectl get svc/web -o yaml | ? {$_ -like "*- nodePort*"}
@@ -189,8 +189,8 @@ The only difference regarding the definition of the service we used earlier in t
 Then, we can deploy the blue version of the web component with the following command:
 
 ```
-$ kubectl create -f web-deploy-blue.yaml
-$ kubectl create -f web-svc-blue-green.yaml
+kubectl create -f web-deploy-blue.yaml
+kubectl create -f web-svc-blue-green.yaml
 ```
 Once the service is up and running, we can determine its IP address and port number and test it:
 
@@ -218,7 +218,7 @@ The interesting lines are as follows:
 Now, we're ready to deploy this green version of the service. It should run separately from the blue service:
 
 ```
-$ kubectl create -f web-deploy-green.yaml
+kubectl create -f web-deploy-green.yaml
 ```
 We can make sure that both deployments coexist like so:
 
@@ -242,7 +242,7 @@ Pets Demo Application
 Now comes the interesting part. We can flip traffic from blue to green by editing the existing service for the web component. To do so, execute the following command:
 
 ```
-$ kubectl edit svc/web
+kubectl edit svc/web
 ```
 
 Change the value of the label color from blue to green. Then, save and quit the editor. The Kubernetes CLI will automatically update the service. When we now query the web service again, we get this:
