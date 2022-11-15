@@ -6,8 +6,7 @@ All meaningful applications consume or produce data. Yet containers are, prefera
 Before we dive into volumes, let's first discuss what happens if an application in a container changes something in the filesystem of the container. In this case, the changes are all happening in the writable container layer that we introduced in Mastering Containers. Let's quickly demonstrate this by running a container, and execute a script in it that is creating a new file, like this:
 
 ```
-$ docker container run --name demo \
-    alpine /bin/sh -c 'echo "This is a test" > sample.txt'
+docker container run --name demo  alpine /bin/sh -c 'echo "This is a test" > sample.txt'
 ```
 
 The preceding command creates a container named demo, and, inside this container, creates a file called sample.txt with the content **This is a test**. The container exits after running the **echo** command but remains in memory, available for us to do our investigations. Let's use the **diff** command to find out what has changed in the container's filesystem in relation to the filesystem of the original image, as follows:
