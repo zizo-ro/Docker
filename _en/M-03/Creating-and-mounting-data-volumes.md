@@ -6,8 +6,16 @@ All meaningful applications consume or produce data. Yet containers are, prefera
 Before we dive into volumes, let's first discuss what happens if an application in a container changes something in the filesystem of the container. In this case, the changes are all happening in the writable container layer that we introduced in Mastering Containers. Let's quickly demonstrate this by running a container, and execute a script in it that is creating a new file, like this:
 
 ```
-docker container run --name demo  alpine /bin/sh -c 'echo "This is a test" > sample.txt'
+docker container run --name demo -it alpine /bin/sh
 ```
+/ #
+cd /home
+/home # echo "This is a test " > sample.txt
+/home # ls
+sample.txt
+
+```
+
 
 The preceding command creates a container named demo, and, inside this container, creates a file called sample.txt with the content **This is a test**. The container exits after running the **echo** command but remains in memory, available for us to do our investigations. Let's use the **diff** command to find out what has changed in the container's filesystem in relation to the filesystem of the original image, as follows:
 
@@ -28,35 +36,6 @@ If we now remove the container from memory, its container layer will also be rem
 
 # Creating volumes
 Since at this time, when using Docker for Desktop on a macOS or Windows computer, containers are not running natively on macOS or Windows but rather in a **(hidden) VM created by Docker for Desktop**, for illustrative purposes it is best we use **docker-machine** to create and use an explicit VM running Docker. At this point, we assume that you have Docker Toolbox installed on your system. If not, then please go back to, **Setting up a Working Environment**, where we provide detailed instructions on how to install Toolbox:
-
-Use **docker-machine** to list all VMs currently running in VirtualBox, as follows:
-
-```
-$ docker-machine ls 
-```
-
-If you do not have a VM called node-1 listed, then please create one with the following command:
-
-```
-docker-machine create — driver hyperv — hyperv-virtual-switch "External Virtual Switch" manager1
-```
-Refer back to  Setting up a Working Environment, on how to create a Hyper-V-based VM with docker-machine if you are running on Windows with Hyper-V enabled.
-
-If, on the other hand, you have a VM called node-1 but it is not running, then please start it, as follows:
-```
-$ docker-machine start node-1
-```
-Now that everything is ready, use docker-machine to SSH into this VM, like this:
-
-```
-$ docker-machine ssh node-1
-```
-
-You should be greeted by this welcome image:
-
-![cmdv](./img/L3-cmdv-p1.png)
-
-docker-machine VM welcome message
 
 To create a new data volume, we can use the **docker volume create** command. This will create a named volume that can then be mounted into a container and used for persistent data access or storage. The following command creates a volume called **sample**, using the default volume driver:
 
