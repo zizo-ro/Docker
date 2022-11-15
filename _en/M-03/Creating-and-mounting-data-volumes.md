@@ -14,7 +14,7 @@ cd /home
 /home # ls
 sample.txt
 
-```
+
 
 
 The preceding command creates a container named demo, and, inside this container, creates a file called sample.txt with the content **This is a test**. The container exits after running the **echo** command but remains in memory, available for us to do our investigations. Let's use the **diff** command to find out what has changed in the container's filesystem in relation to the filesystem of the original image, as follows:
