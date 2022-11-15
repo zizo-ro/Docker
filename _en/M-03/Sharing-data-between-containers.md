@@ -21,7 +21,7 @@ It should succeed.
 
 Exit this container, and then execute the following command:
 ```
-$ docker container run -it --name reader -v shared-data:/app/data:ro ubuntu:19.04 /bin/bash
+docker container run -it --name reader -v shared-data:/app/data:ro ubuntu:19.04 /bin/bash
 ```
 
 And we have a container called reader that has the same volume mounted as read-only (ro).
