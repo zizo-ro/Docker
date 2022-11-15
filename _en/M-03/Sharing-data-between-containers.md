@@ -7,9 +7,7 @@ At times, though, we want to share data between containers. Say an application r
 Now, as always when multiple applications or processes concurrently access data, we have to be very careful to avoid inconsistencies. To avoid concurrency problems such as race conditions, we ideally have only one application or process that is creating or modifying data, while all other processes concurrently accessing this data only read it. We can enforce a process running in a container to only be able to read the data in a volume by mounting this volume as read-only. Have a look at the following command:
 
 ```
-$ docker container run -it --name writer \
-    -v shared-data:/data \
-    alpine /bin/sh
+docker container run -it --name writer -v shared-data:/data alpine /bin/sh
 ```
 
 Here, we create a container called writer that has a volume, shared-data, mounted in default read/write mode:
@@ -23,9 +21,7 @@ It should succeed.
 
 Exit this container, and then execute the following command:
 ```
-$ docker container run -it --name reader \
-    -v shared-data:/app/data:ro \
-    ubuntu:19.04 /bin/bash
+$ docker container run -it --name reader -v shared-data:/app/data:ro ubuntu:19.04 /bin/bash
 ```
 
 And we have a container called reader that has the same volume mounted as read-only (ro).
@@ -51,14 +47,11 @@ bash: /app/data/data.txt: Read-only file system
 
 Let's exit the container by typing exit at the Command Prompt. Back on the host, let's clean up all containers and volumes, as follows:
 
+Bash
 ```
-$ docker container rm -f $(docker container ls -aq) 
-$ docker volume rm $(docker volume ls -q) 
+docker container rm -f $(docker container ls -aq) 
+docker volume rm $(docker volume ls -q) 
 ```
 
-Once this is done, exit the docker-machine VM by also typing exit at the Command Prompt. You should be back on your Docker for Desktop. Use docker-machine to stop the VM, like this:
-```
-$ docker-machine stop node-1 
-```
 Next, we will show how to mount arbitrary folders from the Docker host into a container.
 
