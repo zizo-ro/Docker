@@ -1,3 +1,80 @@
+# Create
+
+'''
+docker build -t sample:1.0 .
+'''
+
+
+#run
+
+docker run sample:1.0
+
+docker container run  sample:1.0  ping -c 5 8.8.8.8
+
+#delete after running
+
+docker run -it --rm  --name test sample:1.0
+
+#run detatch
+
+docker run -it --rm -d --name test sample:1.0
+
+
+
+#vizualizare
+
+docker ps
+
+docker container ls
+
+docker ps -a
+
+docker container ls -a
+
+
+
+#inspect
+
+docker container inspect test
+
+
+
+#executa in container
+
+docker container exec -it test /bin/sh
+
+
+
+#attach to logs
+
+docker container attach test
+
+
+
+#retrive log
+
+docker container --help
+
+docker container logs --help
+
+docker container logs  test
+
+docker container logs --tail 5  test
+
+docker container logs --tail 5  --follow test
+
+
+
+#start/stop
+
+docker container start random_trivia-container
+
+docker container stop random_trivia-container
+
+
+
+docker container rm random_trivia-container
+
 # Image
 
 docker image ls
