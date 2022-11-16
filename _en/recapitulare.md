@@ -146,6 +146,7 @@ mkdir C:\Docker\_en\M-03\Example\finishversion
 
 ```
 copy C:\Docker\_en\M-03\Example\src in C:\Docker\_en\M-03\Example\finishversion
+
 copy docker file from C:\Docker\_en\M-03\Example\my-web in  C:\Docker\_en\M-03\Example\finishversion
 
 ```
