@@ -7,7 +7,7 @@ services:
       - 3000:3000
   db:
     image: fredysa/db:1.0
-    build: database
+    build: db
     volumes:
       - pets-data:/var/lib/postgresql/data
 
