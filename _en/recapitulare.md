@@ -157,3 +157,11 @@ docker image tag my-website:1.0 fredysa/my-website:2.0
 docker login
 docker image push fredysa/my-website:2.0
 ```
+
+
+
+### Cleanup PS hystory
+(Get-PSReadlineOption).HistorySavePath
+
+delete C:\Users\srvuser6\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+
