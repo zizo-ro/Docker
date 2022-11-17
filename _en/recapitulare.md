@@ -158,6 +158,49 @@ docker login
 docker image push fredysa/my-website:2.0
 ```
 
+# create network
+
+```
+docker network --help
+docker network create --help
+docker network create --driver bridge Frontend-net
+docker network create --driver bridge --subnet "10.2.0.0/16" Backend-net
+```
+
+#view newtork
+
+```
+docker network ls
+docker network inspect  Frontend-net
+docker network inspect  Backend-net
+```
+#test network settings
+
+```
+docker container run --name c1frontend -d --rm --network Frontend-net alpine:latest ping 127.0.0.1
+docker container run --name c2all -d --rm --network Frontend-net alpine:latest ping 127.0.0.1
+docker container run --name c3backend -d --rm --network Backend-net alpine:latest ping 127.0.0.1
+
+docker network connect Backend-net c2all 
+
+docker container exec -it c1frontend /bin/sh
+docker container exec -it c2all  /bin/sh
+docker container exec -it c3backend  /bin/sh
+```
+
+#clean up network
+
+#sterge tot ce nu e folosit
+```
+docker network prune 
+```
+#sterge targetat
+```
+docker network  rm Backend-net
+```
+
+docker network ls
+
 
 
 ### Cleanup PS hystory
