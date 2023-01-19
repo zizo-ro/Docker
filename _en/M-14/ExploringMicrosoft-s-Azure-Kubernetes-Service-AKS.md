@@ -244,8 +244,12 @@ az-cli:
 az aks create  --resource-group animals-rg --name animals-cluster --node-count 2 --generate-ssh-keys --attach-acr fredysa
 ```
 
+    
+    
 This command takes a while, but after a few minutes, we should receive some JSON-formatted output with all the details about the newly created cluster.
 
+    More : https://learn.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest#az-aks-create
+    
 To access the cluster, we need **kubectl**. We can easily get it installed in our Azure CLI container using this command:
 
 ```
