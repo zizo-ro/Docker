@@ -25,7 +25,7 @@ git pull https://github.com/Fredy-SSA/jenkins-pipeline.git
 
 - wsl\bash
 ```
-docker run --rm -d \
+docker run  -d \
    --name jenkins \
    -u root \
    -p 8080:8080 \
@@ -37,7 +37,7 @@ docker run --rm -d \
 - PS
 ```powershell
 
-docker run --rm -d `
+docker run -d `
    --name jenkins `
    -u root `
    -p 8080:8080 `
