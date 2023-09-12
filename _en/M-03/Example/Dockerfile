@@ -1,2 +1,2 @@
 FROM nginx:alpine
-COPY $pwd/demo /usr/share/nginx/html
+COPY $pwd/src /usr/share/nginx/html
