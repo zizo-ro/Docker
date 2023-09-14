@@ -86,9 +86,11 @@ Node are in Compute tab
 ![aws](./img/node2.png)
 
 Worker node need 3 permissions :
+
 ![aws](./img/node1permissions.png)
 
 After the Node IAM role is created :
+
 ![aws](./img/node3.png)
 
 
@@ -98,5 +100,53 @@ Check if node exist :
 Kubectl get nodes
 ```
 
-## Create repository 
+# Create  Amazon Elastic Container Registry
 
+![aws](./img/repos1.png)
+
+Create Repository
+
+![aws](./img/repos2.png)
+
+Whait until is finished 
+
+Login to ecr :
+
+```
+aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin 126689273402.dkr.ecr.eu-north-1.amazonaws.com
+```
+
+### Upload local image to ECR :
+
+```
+docker pull fredysa/web:1.0
+docker pull fredysa/db:1.0
+```
+Modify Tag to be able to upload file in ECR repository
+```
+docker tag fredysa/web:1.0 126689273402.dkr.ecr.eu-north-1.amazonaws.com/pets:web
+docker tag fredysa/db:1.0 126689273402.dkr.ecr.eu-north-1.amazonaws.com/pets:db
+```
+Push local image to ECR
+```
+docker push 126689273402.dkr.ecr.eu-north-1.amazonaws.com/pets:web
+docker push 126689273402.dkr.ecr.eu-north-1.amazonaws.com/pets:db
+```
+
+Go to sample : 
+```
+cd c:\Docker\_en\M-14\sample\aws
+```
+Run template
+
+```
+kubectl apply -f .\animals.yaml
+```
+
+Check deploy :
+```
+kubectl get all
+
+```
+
+When deploy is complete visit web page from kubectl get all : http://a18329e1773a54018a867672c37186e2-799973039.eu-north-1.elb.amazonaws.com:3000/pet
