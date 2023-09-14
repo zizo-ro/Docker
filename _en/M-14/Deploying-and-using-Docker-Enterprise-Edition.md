@@ -12,7 +12,7 @@
 - Add policy :
   ![aws](./img/access3.png)
 
-For inline :
+For inline (this will allow IAM User to have permissions for EKS):
 ```
 {
 	"Version": "2012-10-17",
@@ -54,6 +54,49 @@ Default output format [None]:
 
 ```
 
+# Create cluster 
+
+Help : https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html
+
+Enter : https://eu-north-1.console.aws.amazon.com/eks/home?region=eu-north-1#/cluster-create
+
+Create Cluster -> Name : Pets  -> follow the screen (Next, Next.... )
+
+![aws](./img/cluster1.png)
+
+- After cluster is created
+Check cluster status :
+```
+ aws eks --region eu-north-1 describe-cluster --name pets --query cluster.status
+```
+Set Kubectl to aws session :
+```
+aws eks update-kubeconfig --region eu-north-1 --name pets
+```
+Kube config is saved in :C:\Users\{PC-Name}\.kube 
+
+Link to EKS console :  https://eu-north-1.console.aws.amazon.com/eks
+
+![aws](./img/cluster2.png)
+
+### Create Node in cluster 
+Node are in Compute tab
+
+![aws](./img/node1.png)
+![aws](./img/node2.png)
+
+Worker node need 3 permissions :
+![aws](./img/node1permissions.png)
+
+After the Node IAM role is created :
+![aws](./img/node3.png)
 
 
+Check if node exist :
+
+```
+Kubectl get nodes
+```
+
+## Create repository 
 
