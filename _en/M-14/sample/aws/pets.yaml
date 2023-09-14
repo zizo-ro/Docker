@@ -15,7 +15,7 @@ spec:
         service: web
     spec:
       containers:
-      - image: pets/web
+      - image: 126689273402.dkr.ecr.eu-north-1.amazonaws.com/pets:web
         name: web
         ports:
         - containerPort: 3000
@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
       - name: db
-        image: pets:db
+        image: 126689273402.dkr.ecr.eu-north-1.amazonaws.com/pets:db
         ports:
         - containerPort: 5432
 ---
