@@ -1,6 +1,11 @@
 [![Home](../../img/home.png)](../M-14/README.md)
 # Deploying  on AWS
 
+## Setup User Permissions
+
+- Connect to : https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/demots?section=permissions
+![aws](./img/access2.png)
+![aws](./img/access1.png)
 
 # Provisioning the infrastructure
 In this first section, we are going to set up the infrastructure needed to install Docker UCP. This is relatively straightforward if you are somewhat familiar with AWS. Let's do this by following these steps:
