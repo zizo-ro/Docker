@@ -73,7 +73,9 @@ Set Kubectl to aws session :
 ```
 aws eks update-kubeconfig --region eu-north-1 --name pets
 ```
-Kube config is saved in :C:\Users\{PC-Name}\.kube 
+Kube config is saved in :
+
+#### C:\Users\{PC-Name}\.kube 
 
 Link to EKS console :  https://eu-north-1.console.aws.amazon.com/eks
 
