@@ -81,6 +81,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 wsl -l -v
 wsl --set-version ubuntu 2
 wsl --set-default-version 2
+wsl --set-default Ubuntu
 ```
 ## Install your Linux distribution of choice from Microsoft store
 
