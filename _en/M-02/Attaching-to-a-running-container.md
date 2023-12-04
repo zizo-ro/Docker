@@ -56,7 +56,7 @@ for n in {1..10}; do curl -4 localhost:8080; done
 ```
 run in Powershell
 ```
-1..10 | % { curl -4 localhost:8080 }
+1..10 | % { curl -4 http://localhost:8080 }
 ```
 
 
