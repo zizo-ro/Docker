@@ -20,7 +20,7 @@ sample.txt
 The preceding command creates a container named demo, and, inside this container, creates a file called sample.txt with the content **This is a test**. The container exits after running the **echo** command but remains in memory, available for us to do our investigations. Let's use the **diff** command to find out what has changed in the container's filesystem in relation to the filesystem of the original image, as follows:
 
 ```
-$ docker container diff demo
+docker container diff demo
 ```
 The output should look like this:
 
@@ -40,14 +40,14 @@ Since at this time, when using Docker for Desktop on a macOS or Windows computer
 To create a new data volume, we can use the **docker volume create** command. This will create a named volume that can then be mounted into a container and used for persistent data access or storage. The following command creates a volume called **sample**, using the default volume driver:
 
 ```
-$ docker volume create sample 
+docker volume create sample 
 ```
 
 The default volume driver is the so-called local driver, which stores the data locally in the host filesystem.
 
 - The easiest way to find out where the data is stored on the host is by using the **docker volume inspect** command on the volume we just created. The actual location can differ from system to system, and so, this is the safest way to find the target folder. You can see this command in the following code block:
 ```
-$ docker volume inspect sample 
+docker volume inspect sample 
 [ 
     { 
         "CreatedAt": "2019-08-02T06:59:13Z",
@@ -70,7 +70,7 @@ Luckily not; I have prepared a **fundamentalsofdocker/nsenter** utility containe
 
 - We need to run this container in privileged mode to get access to this protected part of the filesystem, like this:
 ```
-$ docker run -it --rm --privileged --pid=host fundamentalsofdocker/nsenter
+docker run -it --rm --privileged --pid=host fundamentalsofdocker/nsenter
 / #
 ```
 
@@ -100,7 +100,7 @@ Once we have created a named volume, we can mount it into a container by followi
 
 - For this, we can use the -v parameter in the docker container run command, like this:
 ```
-$ docker container run --name test -it -v sample:/data  alpine /bin/sh
+docker container run --name test -it -v sample:/data  alpine /bin/sh
 Unable to find image 'alpine:latest' locally
 latest: Pulling from library/alpine
 050382585609: Pull complete
@@ -178,14 +178,14 @@ Volumes can be removed using the **docker volume rm**command. It is important to
 
 The following command deletes our **sample** volume that we created earlier:
 ```
-$ docker volume rm sample 
+docker volume rm sample 
 ```
 
 - After executing the preceding command, double-check that the folder on the host has been deleted.
 - To remove all running containers in order to clean up the system, run the following command:
 
 ```
-$ docker container rm -f $(docker container ls -aq) 
+docker container rm -f $(docker container ls -aq) 
 ```
  
 - **Note** that by using the **-v** or **--volume** flag in the command you use to remove a container, you can ask the system to also remove any volume associated with that particular container. Of course, that will only work if the particular volume is only used by this container.
@@ -197,8 +197,8 @@ Follow these steps:
 
 Let's create a sample volume and inspect it using Docker for Desktop on our macOS or Windows machine, like this:
 ```
-$ docker volume create sample
-$ docker volume inspect sample
+docker volume create sample
+docker volume inspect sample
 [
     {
         "CreatedAt": "2019-08-02T07:44:08Z",
@@ -217,7 +217,7 @@ The **Mountpoint** is shown as **/var/lib/docker/volumes/sample/_data**, but you
 - Next, let's generate two files with data in the volume from within an alpine container. To run the container and mount the sample volume to the /data folder of the container, use the following code:
 
 ```
-$ docker container run --rm -it -v sample:/data alpine /bin/sh
+docker container run --rm -it -v sample:/data alpine /bin/sh
 ```
 Generate two files in the /data folder inside the container, like this:
 ```
@@ -233,7 +233,7 @@ To access that hidden VM from our macOS, we have two options. We can either use 
 - Let's start with the first method mentioned, by running a container from the fundamentalsofdocker/nsenter image. We have been using this container already in the previous section. Run the following code:
 
 ```
-$ docker run -it --rm --privileged --pid=host fundamentalsofdocker/nsenter
+docker run -it --rm --privileged --pid=host fundamentalsofdocker/nsenter
 / #
 ```
 
@@ -268,7 +268,7 @@ And now, we have the files in the backing folder of the sample volume.
 
 # Now that we have explored the first option, and if you're using macOS, let's try the **screen** tool, as follows:
 ```
-$ screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
+screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
 ```
 
 By doing so, we will be greeted by an empty screen. Hit Enter, and a **docker-desktop:~#** command-line prompt will be displayed. We can now navigate to the volume folder, like this:
