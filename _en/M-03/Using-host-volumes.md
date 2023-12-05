@@ -4,7 +4,7 @@ In certain scenarios, such as when developing new containerized applications or 
 
 
 ```
-$ docker container run --rm -it \
+docker container run --rm -it \
     -v $(pwd)/src:/app/src \
     alpine:latest /bin/sh
 ```
@@ -20,13 +20,13 @@ Developers use these techniques all the time when they are working on their appl
 
 First, let's create a new folder on the host, where we will put our web assets—such as HTML, CSS, and JavaScript files—and navigate to it, like this:
 ```
-$ mkdir ~/M-03/Example/my-web
-$ cd ~/M-03/Example/my-web
+mkdir ~/M-03/Example/my-web
+cd ~/M-03/Example/my-web
 ```
 Then, we create a simple web page, like this:
 
 ```
-$ echo "<h1>Personal Website</h1>" > index.html  
+echo "<h1>Personal Website</h1>" > index.html  
 ```
 Now, we add a **Dockerfile** that will contain instructions on how to build the image containing our sample website.
 
@@ -42,13 +42,13 @@ The **Dockerfile** starts with the latest Alpine version of nginx, and then copi
 Now, let's build the image with the following command:
 
 ```
-$ docker image build -t my-website:1.0 . 
+docker image build -t my-website:1.0 . 
 ```
 
 And finally, we run a container from this image. We will run the container in detached mode, like this:
 
 ```
-$ docker container run -d --name my-site -p 8080:80 my-website:1.0
+docker container run -d --name my-site -p 8080:80 my-website:1.0
 ```
 
 Note the **-p 8080:80** parameter. We haven't discussed this yet, but we will do it in detail in Single-Host Networking. At the moment, just know that this maps the container port 80 on which nginx is listening for incoming requests to port 8080 of your laptop, where you can then access the application.
@@ -62,9 +62,9 @@ Now, edit the index.html file in your favorite editor, to look like this:
 Now, save it, and then refresh the browser. Oh! That didn't work. The browser still displays the previous version of the index.html file, which consists only of the title. So, let's stop and remove the current container, then rebuild the image, and rerun the container, as follows:
 
 ```
-$ docker container rm -f my-site
-$ docker image build -t my-website:1.0 .
-$ docker container run -d \
+docker container rm -f my-site
+docker image build -t my-website:1.0 .
+docker container run -d \
    --name my-site \
    -p 8080:80 \
    my-website:1.0
@@ -77,8 +77,8 @@ Now is the time to use host-mounted volumes. Once again, remove the current cont
 Navigate to **~/M-03/Example\**
 
 ```
-$ docker container rm -f my-site
-$ docker container run -d \
+docker container rm -f my-site
+docker container run -d \
    --name my-site \
    -v $(pwd):/usr/share/nginx/html \
    -p 8080:80 \
