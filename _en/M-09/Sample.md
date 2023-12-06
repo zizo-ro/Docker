@@ -1,19 +1,13 @@
 [![Home](../../img/home.png)](../M-09/README.md)
 # Jenkins example 
 
-Git repository : https://github.com/Fredy-SSA/Jenkins.git
+Git repository : https://github.com/Fredy-SSA/jenkins-pipeline.git
 
 Setup credential for Docker Hub :
 
 ![ams](./img/d1_img1.png)
 
-- Add credential for dockerhub: 
 
-![ams](./img/d1_img3.png)
-
-![ams](./img/d1_img4.png)
-
-![ams](./img/d1_img2.png)
 
 
 
