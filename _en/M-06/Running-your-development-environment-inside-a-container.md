@@ -27,6 +27,8 @@ You will see a message like this while this is happening:
 
 ![RM](./img/l7-rd_03.png)
 
+
+
 ![RM](./img/l7-rd_04.png)
 
 Visual Studio Code preparing the development container
