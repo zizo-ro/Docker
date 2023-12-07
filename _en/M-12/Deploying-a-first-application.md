@@ -63,7 +63,7 @@ The preceding lines of codes are as follows:
 Now that we have this specification for a Service object, we can create it using kubectl:
 
 ```
-$ kubectl create -f web-service.yaml
+kubectl create -f web-service.yaml
 ```
 
 We can list all the services to see the result of the preceding command:
@@ -121,7 +121,7 @@ OK, this looks a bit scary, but it isn't. It is a bit longer than the definition
 As always, we use kubectl to deploy the StatefulSet:
 
 ```
-$ kubectl create -f db-stateful-set.yaml
+kubectl create -f db-stateful-set.yaml
 ```
 
 Now, if we list all the resources in the cluster, we will be able to see the additional objects that were created:
@@ -162,7 +162,7 @@ The database component will be represented by this Service object and it can be 
 Let's deploy this service with the following command:
 
 ```
-$ kubectl create -f db-service.yaml
+kubectl create -f db-service.yaml
 ```
 
 Now, we should be ready to test the application. We can use the browser this time to enjoy the beautiful animal images:
