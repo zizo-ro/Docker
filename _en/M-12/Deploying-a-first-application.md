@@ -24,7 +24,7 @@ Please make sure that you have set the context of kubectl to Minikube. See, Sett
 We can deploy this Deployment object using kubectl:
 
 ```
-$ kubectl create -f web-deployment.yaml
+kubectl create -f web-deployment.yaml
 ```
 We can double-check that the deployment has been created again using our Kubernetes CLI. We should see the following output:
 ```
