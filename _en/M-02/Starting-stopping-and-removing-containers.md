@@ -84,7 +84,7 @@ Now the goal is to have a process running inside a container that produces a new
 ```
 while : 
 do 
- wget -qO- http://jservice.io/api/random | jq .[0].question 
+ wget -qO- https://api.chucknorris.io/jokes/random | jq .[0].question 
  sleep 5 
 done
 ```
@@ -95,13 +95,13 @@ choco install jq -y
 choco install wget -y
 choco install curl -y
  
-wget -qO- http://jservice.io/api/random | jq .[0].question 
+wget -qO- https://api.chucknorris.io/jokes/random | jq .[0].question 
 ```
 # Powershell
 ```
 while ($true) {
     
-$uri = "http://jservice.io/api/random"
+$uri = "https://api.chucknorris.io/jokes/random"
 $game = Invoke-RestMethod -Uri $uri
 $game.question
 "----------------------------------------------"
