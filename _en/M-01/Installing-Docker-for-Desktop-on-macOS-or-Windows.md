@@ -15,6 +15,10 @@ No matter what OS you're using, navigate to the Docker start page at https://www
 On the right-hand side of the loaded page, you'll find a big blue button saying Download Desktop and Take a Tutorial. Click this button and follow the instructions. You will be redirected to Docker Hub. If you don't have an account on Docker Hub yet, then create one. It is absolutely free, but you need an account to download the software. Otherwise, just log in.
 Once you're logged in, look out for this on the page:
 
+From Choco :
+```
+choco install docker -y 
+```
 ![id](../../img/M-01/L01-ID-p1.png)
 
 
