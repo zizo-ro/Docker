@@ -103,7 +103,7 @@ while ($true) {
     
 $uri = "https://api.chucknorris.io/jokes/random"
 $game = Invoke-RestMethod -Uri $uri
-$game.question
+$game.value 
 "----------------------------------------------"
 Write-Host $game.answer -ForegroundColor Green
 "______________________________________________"
