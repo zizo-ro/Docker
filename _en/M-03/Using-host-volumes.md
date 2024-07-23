@@ -82,7 +82,7 @@ CLI
 docker container rm -f my-site
 docker container run -d \
    --name my-site \
-   -v $(pwd):/usr/share/nginx/html \
+   -v $(pwd)/src/:/usr/share/nginx/html \
    -p 8080:80 \
    my-website:1.0
 ```
