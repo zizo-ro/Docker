@@ -28,7 +28,7 @@ And we have a container called reader that has the same volume mounted as read-o
 
 Firstly, make sure you can see the file created in the first container, like this:
 ```
-$ ls -l /app/data 
+ls -l /app/data 
 
 ```
 total 4
