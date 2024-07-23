@@ -7,12 +7,12 @@ To be able to ship our custom image to other environments, we need to first give
 Each image has a so-called tag. A tag is often used to version images, but it has a broader reach than just being a version number. If we do not explicitly specify a tag when working with images, then Docker automatically assumes we're referring to the latest tag. This is relevant when pulling an image from Docker Hub, as in the following example:
 
 ```
-$ docker image pull alpine
+docker image pull alpine
 ```
 The preceding command will pull the alpine:latest image from Docker Hub. If we want to explicitly specify a tag, we do so like this:
 
 ```
-$ docker image pull alpine:3.5
+docker image pull alpine:3.5
 ```
 This will now pull the alpine image that has been tagged with 3.5.
 
@@ -78,15 +78,15 @@ To be able to push an image to my personal account on Docker Hub, I need to tag 
 
 - Let's say I want to push the latest version of Alpine to my account and give it a tag of 1.0. I can do this in the following way:
 ```
-$ docker image tag alpine:latest fredysa/alpine:1.0
+docker image tag alpine:latest fredysa/alpine:1.0
 ```
 Now, to be able to push the image, I have to log in to my account, as follows:
 ```
-$ docker login -u fredysa -p <my secret password>
+docker login -u fredysa -p <my secret password>
 ```
 After a successful login, I can then push the image, like this:
 ```
-$ docker image push fredysa/alpine:1.0
+docker image push fredysa/alpine:1.0
 ```
 I will see something similar to this in the Terminal:
 
