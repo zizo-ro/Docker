@@ -84,6 +84,8 @@ Now, to be able to push the image, I have to log in to my account, as follows:
 ```
 docker login -u fredysa -p <my secret password>
 ```
+if you are logedin in Docker desktop you can use just Docker Login 
+
 After a successful login, I can then push the image, like this:
 ```
 docker image push fredysa/alpine:1.0
