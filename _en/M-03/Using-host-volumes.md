@@ -76,6 +76,7 @@ Now is the time to use host-mounted volumes. Once again, remove the current cont
 
 Navigate to **~/M-03/Example\**
 
+CLI
 ```
 docker container rm -f my-site
 docker container run -d \
@@ -84,7 +85,9 @@ docker container run -d \
    -p 8080:80 \
    my-website:1.0
 
-PS> docker container run -d `
+PS>
+```
+docker container run -d `
    --name my-site `
    -v $pwd/src/:/usr/share/nginx/html `
    -p 8080:80 `
