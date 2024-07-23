@@ -2,14 +2,15 @@
 # **Using host volumes**
 In certain scenarios, such as when developing new containerized applications or when a containerized application needs to consume data from a certain folder produced—say—by a legacy application, it is very useful to use volumes that mount a specific host folder. Let's look at the following example:
 
-
+WSL\CLI
 ```
 docker container run --rm -it \
     -v $(pwd)/src:/app/src \
     alpine:latest /bin/sh
 ```
+PS>
 ```
-PS> docker container run --rm -it -v $pwd/src:/app/src alpine:latest /bin/sh
+docker container run --rm -it -v $pwd/src:/app/src alpine:latest /bin/sh
 ```
 
 The preceding expression interactively starts an **alpine** container with a shell and mounts the src subfolder of the current directory into the container at /app/src. We need to use **$(pwd) (or `pwd`, for that matter $pwd in Powershell)**, which is the current directory, as when working with volumes, we always need to use absolute paths.
