@@ -37,20 +37,23 @@ export
 
 ```bash
 docker container run --rm -it alpine /bin/sh
-/ # export
 ```
+/ # export
+
 ### Pass some information in container --env
 ```dockerfile
 docker container run --rm -it --env LOG_DIR=/var/log/my-log   alpine /bin/sh
-/ #
 ```
+/ #
+
 ### Pass multiple -env
 
 ```bash
 docker container run --rm -it --env LOG_DIR=/var/log/my-log --env MAX_LOG_FILES=5 --env MAX_LOG_SIZE=1G  alpine /bin/sh
+```
+```bash
 export | grep LOG
 ```
-
 
 ### Run from env-file
 docker container run --rm -it --env-file ./development.config  alpine sh -c "export"
