@@ -84,6 +84,8 @@ docker container run -d \
    -v $(pwd):/usr/share/nginx/html \
    -p 8080:80 \
    my-website:1.0
+```
+
 
 PS>
 ```
