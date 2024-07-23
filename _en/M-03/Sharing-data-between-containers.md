@@ -12,10 +12,10 @@ docker container run -it --name writer -v shared-data:/data alpine /bin/sh
 
 Here, we create a container called writer that has a volume, shared-data, mounted in default read/write mode:
 
-Try to create a file inside this container, like this:
+Try to create a file inside this container, like this: #\
 
 ```
-# / echo "I can create a file" > /data/sample.txt 
+echo "I can create a file" > /data/sample.txt 
 ```
 It should succeed.
 
@@ -29,21 +29,24 @@ And we have a container called reader that has the same volume mounted as read-o
 Firstly, make sure you can see the file created in the first container, like this:
 ```
 $ ls -l /app/data 
+
+```
 total 4
 -rw-r--r-- 1 root root 20 Jan 28 22:55 sample.txt
-```
+
+
 
 Then, try to create a file, like this:
 
 ```
-# / echo "Try to break read/only" > /app/data/data.txt
+echo "Try to break read/only" > /app/data/data.txt
 ```
 
 It will fail with the following message:
 
-```
+
 bash: /app/data/data.txt: Read-only file system
-```
+
 
 Let's exit the container by typing exit at the Command Prompt. Back on the host, let's clean up all containers and volumes, as follows:
 
