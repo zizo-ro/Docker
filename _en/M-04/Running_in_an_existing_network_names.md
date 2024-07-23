@@ -21,7 +21,7 @@ Now, let's demonstrate how this works:
 1. First, we create a new bridge network
 
 ```
-$ docker network create --driver bridge test-net
+docker network create --driver bridge test-net
 ```
 
 2. Next, we run a container attached to this network:
