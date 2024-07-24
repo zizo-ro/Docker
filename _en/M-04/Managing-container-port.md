@@ -13,12 +13,12 @@ But now, it is time to demonstrate how we can actually map a container port to a
 1. First, we can let Docker decide which host port our container port shall be mapped to. Docker will then select one of the free host ports in the range of 32xxx. This automatic mapping is done by using the -P parameter :
 
 ```
-$ docker container run --name web -P -d nginx:alpine
+docker container run --name web -P -d nginx:alpine
 ```
 The preceding command runs an nginx server in a container. nginx is listening at port 80 inside the container. With the -P parameter, we're telling Docker to map all the exposed container ports to a free port in the 32xxx range. We can find out which host port Docker is using by using the docker container port command:
 
 ```
-$ docker container port web
+docker container port web
 80/tcp -> 0.0.0.0:32768
 ```
 The nginx container only exposes port 80, and we can see that it has been mapped to the host port 32768. If we open a new browser window and navigate to localhost:32768, we should see the following screen:
@@ -28,7 +28,7 @@ The nginx container only exposes port 80, and we can see that it has been mapped
 2. An alternative way to find out which host port Docker is using for our container is to inspect it. The host port is part of the NetworkSettings node:
 ```
 #bash
-$ docker container inspect web | grep HostPort
+docker container inspect web | grep HostPort
 #PS 
 docker container inspect web | ? {$_ -like "*HostPort*"}
 
@@ -38,10 +38,12 @@ docker container inspect web | ? {$_ -like "*HostPort*"}
 3. Finally, the third way of getting this information is to list the container:
 
 ```
-$ docker container ls
+docker container ls
+```
+
 CONTAINER ID    IMAGE         ...   PORTS                  NAMES
 56e46a14b6f7    nginx:alpine  ...   0.0.0.0:32768->80/tcp  web
-```
+
 
 - **Note**: Please note that in the preceding output, the **/tcp** part tells us that the port has been opened for communication with the TCP protocol, but not for the UDP protocol. TCP is the default, and if we want to specify that we want to open the port for UDP, then we have to specify this explicitly. **0.0.0.0** in the mapping tells us that traffic from any host IP address can now reach container port **80** of the web container.
 - 
@@ -49,7 +51,7 @@ Sometimes, we want to map a container port to a very specific host port. We can 
 
 
 ```
-$ docker container run --name web2 -p 8080:80 -d nginx:alpine
+docker container run --name web2 -p 8080:80 -d nginx:alpine
 ```
 The value of the -p parameter is in the form of **`<host port>:<container port>`**. Therefore, in the preceding case, we map container port **80**to host port **8080**. Once the **web2**container runs, we can test it in the browser by navigating to **localhost:8080**, and we should be greeted by the same nginx welcome page that we saw in the previous example that dealt with automatic port mapping.
 
