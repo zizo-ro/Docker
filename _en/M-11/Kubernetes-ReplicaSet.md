@@ -46,14 +46,14 @@ The really important elements are the number of replicas and the selector, which
 In our **~/lab-12-../Sample** folder, we have a file called **replicaset.yaml** that contains the preceding specification. Let's use this file to create the **ReplicaSet**:
 
 ```
-$ kubectl create -f replicaset.yaml
+kubectl create -f replicaset.yaml
 replicaset "rs-web" created
 ```
 
 If we list all the ReplicaSets in the cluster, we get the following (**rs** is a shortcut for **replicaset**):
 
 ```
-$ kubectl get rs
+kubectl get rs
 NAME     DESIRED   CURRENT   READY   AGE
 rs-web   3         3         3       51s
 ```
@@ -61,7 +61,7 @@ rs-web   3         3         3       51s
 In the preceding output, we can see that we have a single ReplicaSet called **rs-web** whose desired state is three (pods). The current state also shows three pods and tell us that all three pods are ready. We can also list all the pods in the system. This results in the following output:
 
 ```
-$ kubectl get pods
+kubectl get pods
 NAME           READY   STATUS    RESTARTS   AGE
 rs-web-6qzld   1/1     Running   0          4m
 rs-web-frj2m   1/1     Running   0          4m
@@ -74,7 +74,7 @@ Here, we can see our three expected pods. The names of the pods use the name of 
 Now, let's test the magic powers of the self-healing ReplicaSet by randomly killing one of its pods and observing what happens. Let's delete the first pod from the previous list:
 
 ```
-$  kubectl delete po/rs-web-j7rm4 
+kubectl delete po/rs-web-j7rm4 
 pod "rs-web-j7rm4" deleted
 
  
