@@ -1,0 +1,5 @@
+docker build -t fredysa/jenkins:2.452 .
+
+docker login
+
+docker push fredysa/jenkins:2.452
