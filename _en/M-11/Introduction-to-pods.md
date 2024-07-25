@@ -25,8 +25,9 @@ When a Docker container is created and no specific network is specified, then th
 
 For a Kubernetes pod, the situation is different. When creating a new pod, Kubernetes first creates a so-called **pause** container whose only purpose is to create and manage the namespaces that the pod will share with all containers. Other than that, it does nothing useful; it is just sleeping. The **pause** container is connected to the **docker0** bridge through **veth0**. Any subsequent container that will be part of the pod uses a special feature of the Docker engine that allows it to reuse an existing network namespace. The syntax to do so looks like this:
 
+PS>
 ```
-$ docker container create --net container:pause ... 
+docker container create --net container:pause ... 
 ```
 
 The important part is the **--net** argument, which uses **container:<container name>**as a value. If we create a new container this way, then Docker does not create a new veth endpoint; the container uses the same one as the **pause** container.
@@ -44,7 +45,7 @@ When two containers use the same Linux kernel network namespace, they can commun
 After all this theory, you might be wondering how a pod is actually created by Kubernetes. Kubernetes only uses what Docker provides. So, how does this network namespace share work? First, Kubernetes creates the so-called pause container, as mentioned previously. This container has no other function than to reserve the kernel namespaces for that pod and keep them alive, even if no other container inside the pod is running. Let's simulate the creation of a pod, then. We start by creating the pause container and use Nginx for this purpose:
 
 ```
-$ docker container run -d --name pause nginx:alpine
+docker container run -d --name pause nginx:alpine
 ```
 Now, we add a second container called main, attaching it to the same network namespace as the pause container:
 
