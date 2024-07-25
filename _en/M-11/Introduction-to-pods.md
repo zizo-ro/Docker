@@ -194,7 +194,7 @@ kubectl create -f pod.yaml
 This will respond with **pod "web-pod" created**. We can then list all the pods in the cluster with **kubectl get pods**:
 
 ```
-$ kubectl get pods
+kubectl get pods
 NAME      READY   STATUS    RESTARTS   AGE
 web-pod   1/1     Running   0          2m
 ```
@@ -204,7 +204,10 @@ As expected, we have one of one pods in the running status. The pod is called **
 ```
 kubectl describe pod/web-pod
 
+```
 
+Export
+```
 Name:         web-pod
 Namespace:    default
 Priority:     0
@@ -282,7 +285,7 @@ spec:
 We have defined a claim that requests 2 GB of data. Let's create this 
 
 ```
-$ kubectl create -f volume-claim.yaml
+kubectl create -f volume-claim.yaml
 ```
 
 We can list the claim using **kubectl** (**pvc** is a shortcut for **PersistentVolumeClaim**):
@@ -325,13 +328,13 @@ In the last four lines, in the **volumes**block, we define a list of volumes we 
 Let's create this pod:
 
 ```
-$ kubectl create -f pod-with-vol.yaml
+kubectl create -f pod-with-vol.yaml
 ```
 
 Then, we can **exec** into the container to double-check that the volume has mounted by navigating to the **/data** folder, creating a file there, and exiting the container:
 
 ```
-$ kubectl exec -it web-pod -- /bin/sh
+kubectl exec -it web-pod -- /bin/sh
 / # cd /data
 /data # echo "Hello world!" > sample.txt
 /data # exit
