@@ -31,7 +31,7 @@ docker run  -d \
    -p 8080:8080 \
    -v jenkins-data:/var/jenkins_home \
    -v /var/run/docker.sock:/var/run/docker.sock \
-   fredysa/jenkins:21.02
+   fredysa/jenkins:2.452
 ```
 
 - PS
@@ -43,7 +43,7 @@ docker run -d `
    -p 8080:8080 `
    -v jenkins-data:/var/jenkins_home `
    -v /var/run/docker.sock:/var/run/docker.sock `
-   fredysa/jenkins:21.02
+  fredysa/jenkins:2.452
 
 ```
 Note that we are running as the root user inside the container and that we are mounting the Docker socket into the container (-v /var/run/docker.sock:/var/run/docker.sock) so that Jenkins can access Docker from within the container. Data produced and used by Jenkins will be stored in the Docker volume, **jenkins-data**.
