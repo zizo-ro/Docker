@@ -43,7 +43,7 @@ Let's concentrate on the differences, then. First, on **line 2**, we have the **
 
 The really important elements are the number of replicas and the selector, which specifies the set of pods governed by the **ReplicaSet.**
 
-In our **~/lab-12-../Sample** folder, we have a file called **replicaset.yaml** that contains the preceding specification. Let's use this file to create the **ReplicaSet**:
+In our **~/lab-11-../Sample** folder, we have a file called **replicaset.yaml** that contains the preceding specification. Let's use this file to create the **ReplicaSet**:
 
 ```
 kubectl create -f replicaset.yaml
