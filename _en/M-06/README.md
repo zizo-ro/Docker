@@ -19,6 +19,7 @@ In this chapter, we have shown a few tips and tricks for the advanced Docker use
 
 In the next chapter, we will introduce the concept of a distributed application architecture and discuss the various patterns and best practices that are required to run a distributed application successfully. In addition to that, we will list some of the concerns that need to be fulfilled to run such an application in production or a production-like environment.
 
+
 # Further reading
 - Using Docker in Docker at http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/
 - Shell in a Box at https://github.com/shellinabox/shellinabox
