@@ -18,7 +18,7 @@ To use this container for debugging purposes, we can proceed as follows:
 
 - Spin up a throwaway bastion container for debugging on Kubernetes, using the following command:
 ```
-kubectl run --generator=run-pod/v1 tmp-shell --rm -i --tty --image nicolaka/netshoot -- /bin/bash
+kubectl run tmp-shell --rm -it --restart=Never --image=nicolaka/netshoot -- /bin/bash
  
  bash-5.0#
 ```
