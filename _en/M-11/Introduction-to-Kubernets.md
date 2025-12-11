@@ -3,7 +3,7 @@
 
 Install Kubernets
 
-![m11](./img/14.png)
+![m12](./img/k1.png)
 
 Let's make sure that Kubernetsis running with the following command:
 
@@ -18,6 +18,7 @@ Once Minikube is ready, we can access its single node cluster using kubectl. We 
 kubectl get nodes
 ```
 ![m12](./img/m12-k4.png)
+
 
 
 
