@@ -49,10 +49,15 @@ kubectl create token dashboard-admin-sa -n kubernetes-dashboard
 kubectl proxy
 ```
 
+or
+```
+kubectl proxy --port=8002
+```
 ## Access the Dashboard
 
 Open the following URL in your browser:
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
 
 
 
