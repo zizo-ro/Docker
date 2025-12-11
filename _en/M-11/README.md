@@ -10,7 +10,7 @@ Kubernetes (also known as k8s or “kube”) is an open source container orchest
 - [Kubernetes architecture](Kubernetes-architecture.md)
 - [Kubernetes master nodes](Kubernetes-master-nodes.md)
 - [Cluster nodes](Cluster-nodes.md)
-- [Intall Docker Kubernets](Introduction-to-Minikube.md)
+- [Intall Docker Kubernets](Introduction-to-Kubernets.md)
 - [Kubernetes support in Docker for Desktop](Kubernetes-support-in-Docker-for-Desktop.md)
 - [Introduction to pods](Introduction-to-pods.md)
 - [Kubernetes ReplicaSet](Kubernetes-ReplicaSet.md)
