@@ -18,12 +18,7 @@
 ## 
 ![m12](./img/k5.png)
 
-Let's make sure that Kubernetsis running with the following command:
 
-```
-kubectl get all
-kubectl get nodes
-```
 
 ## Verify that Kubernetes is Running
 
@@ -55,6 +50,7 @@ kubectl proxy
 
 Open the following URL in your browser:
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
 
 
 
