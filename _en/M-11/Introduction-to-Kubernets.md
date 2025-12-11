@@ -28,6 +28,9 @@ kubectl get nodes
 ```
 Install Kubernetes Dashboard
 
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+```
 ## Create a Temporary Admin User
 
 ```
@@ -50,6 +53,7 @@ kubectl proxy
 
 Open the following URL in your browser:
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
 
 
 
