@@ -22,6 +22,8 @@ Let's make sure that Kubernetsis running with the following command:
 
 ```
 kubectl get all
+```
+```
 kubectl get nodes
 ```
 
@@ -54,6 +56,7 @@ kubectl proxy
 
 Open the following URL in your browser:
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
 
 
 
