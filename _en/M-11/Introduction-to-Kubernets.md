@@ -25,33 +25,33 @@ kubectl get all
 kubectl get nodes
 ```
 
-# Instalare Kubernetes Dashboard
-
+## Verify that Kubernetes is Running
+Shell
 ```
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+kubectl get allkubectl get nodesShow more lines
 ```
+Install Kubernetes Dashboard
 
-## Creaza user temporar :
-
+## Create a Temporary Admin User
+Shell
 ```
-kubectl create serviceaccount dashboard-admin-san -n kubernetes-dashboard
-kubectl create clusterrolebinding dashboard-admin-san --clusterrole=cluster-admin --serviceaccount=kubernetes-dashboard:dashboard-admin-san
-```
-
-## Creează un token pentru autentificare (exemplu pentru un user admin temporar):
-
-```
-kubectl create token dashboard-admin-sa -n kubernetes-dashboard
+kubectl create serviceaccount dashboard-admin-sa -n kubernetes-dashboardShow more lines
 ```
 
-##  Pornește accesul local:
-
+## Generate an Authentication Token (for the temporary admin user)
+Shell
 ```
-kubectl proxy
+kubectl create token dashboard-admin-sa -n kubernetes-dashboardShow more lines
 ```
 
-##  Accesează:
+## Start Local Access (Proxy)
+Shell
+```
+kubectl proxyShow more lines
+```
+
+## Access the Dashboard
+
+Open the following URL in your browser:
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
-
-
 
