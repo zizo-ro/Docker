@@ -28,31 +28,32 @@ kubectl get nodes
 ## Verify that Kubernetes is Running
 
 ```
-kubectl get allkubectl get nodesShow more lines
+kubectl get allkubectl get nodes
 ```
 Install Kubernetes Dashboard
 
 ## Create a Temporary Admin User
 
 ```
-kubectl create serviceaccount dashboard-admin-sa -n kubernetes-dashboardShow more lines
+kubectl create serviceaccount dashboard-admin-sa -n kubernetes-dashboard
 ```
 
 ## Generate an Authentication Token (for the temporary admin user)
 
 ```
-kubectl create token dashboard-admin-sa -n kubernetes-dashboardShow more lines
+kubectl create token dashboard-admin-sa -n kubernetes-dashboard
 ```
 
 ## Start Local Access (Proxy)
 
 ```
-kubectl proxyShow more lines
+kubectl proxy
 ```
 
 ## Access the Dashboard
 
 Open the following URL in your browser:
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
 
 
