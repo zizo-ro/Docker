@@ -8,9 +8,17 @@ Before we dive into volumes, let's first discuss what happens if an application 
 ```
 docker container run --name demo -it alpine /bin/sh
 ```
+docker container run --name demo -it alpine /bin/sh
+
 / #
 cd /home
-/home # echo "This is a test " > sample.txt
+docker container run --name demo -it alpine /bin/sh
+```
+echo "This is a test " > sample.txt
+docker container run --name demo -it alpine /bin/sh
+```
+docker container run --name demo -it alpine /bin/sh
+
 /home # ls
 sample.txt
 
