@@ -93,7 +93,9 @@ Pets Demo Application v2
 Now, how do we know that there hasn't been any downtime during this update? Did the update really happen in a rolling fashion? What does rolling update mean at all? Let's investigate. First, we can get a confirmation from Kubernetes that the deployment has indeed happened and was successful by using the rollout status command:
 
 ```
-$ kubectl rollout status deploy/web
+kubectl rollout status deploy/web
+```
+```
 deployment "web" successfully rolled out
 ```
 
