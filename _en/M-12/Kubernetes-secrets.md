@@ -87,7 +87,7 @@ exit
 Now, we can use kubectl to create a secret from those files, as follows:
 
 ```
-$  kubectl create secret generic pets-secret-prod  --from-file=./username.txt --from-file=./password.txt 
+kubectl create secret generic pets-secret-prod  --from-file=./username.txt --from-file=./password.txt 
 secret "pets-secret-prod" created
 
 kubectl get secret/pets-secret-prod
@@ -104,7 +104,7 @@ Now, let's see how we can actually use the secrets that we have defined.
 Let's say we want to create a Deployment object where the web component uses our secret, **pets-secret**, that we introduced in the preceding section. We can use the following command to create the secret in the cluster:
 
 ```
-$ kubectl create -f pets-secret.yaml
+kubectl create -f pets-secret.yaml
 ```
 
 In the **~\M-12\sample\web-deploy-secret.yaml** file, we can find the definition of the Deployment object. We had to add the part starting from line 23 to the original definition of the **Deployment** object:
