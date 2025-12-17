@@ -40,8 +40,8 @@ spec:
 Now, we can create this deployment as usual and also, at the same time, the service that makes our component accessible:
 
 ```
-$ kubectl create -f web-deploy-rolling-v1.yaml
-$ kubectl create -f web-service.yaml
+ kubectl create -f web-deploy-rolling-v1.yaml
+ kubectl create -f web-service.yaml
 ```
 
 Once we have deployed the pods and the service, we can test our web component with the following command:
